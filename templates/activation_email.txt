@@ -1,0 +1,18 @@
+{% autoescape off %}
+
+Hello,
+
+Welcome to Paylab!
+
+ please confirm that {{email}} is your email address by entering the activation code below:
+
+{{code}}
+If you have any questions throughout the sign up process, we're happy to help! Please visit our Help Center or reach out to our support team.
+
+Sincerely,
+
+The Paylab Team
+
+Download our App and start sending money at anytime
+
+{% endautoescape %}

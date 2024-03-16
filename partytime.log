@@ -1,0 +1,10 @@
+[16-03-2024 14:23:50] INFO autoreload 4628932096 - Watching for file changes with StatReloader
+[16-03-2024 14:23:50] INFO autoreload 4628932096 - Watching for file changes with StatReloader
+[16-03-2024 14:23:50] INFO environ 4628932096 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:23:51] INFO environ 4628932096 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:24:24] INFO environ 4420310528 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:24:25] INFO environ 4420310528 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:24:29] INFO autoreload 4505826816 - Watching for file changes with StatReloader
+[16-03-2024 14:24:29] INFO autoreload 4505826816 - Watching for file changes with StatReloader
+[16-03-2024 14:24:29] INFO environ 4505826816 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:24:29] INFO environ 4505826816 - .env not found - if you're not configuring your environment separately, check this.
