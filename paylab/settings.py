@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-18m6^u40(w()0ii-rh56%2)=*=91)3q%kt1sw#@ip$8=*!=kj5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["www.backend.paylab.finance","backend.paylab.finance"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
