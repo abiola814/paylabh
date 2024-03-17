@@ -8,3 +8,59 @@
 [16-03-2024 14:24:29] INFO autoreload 4505826816 - Watching for file changes with StatReloader
 [16-03-2024 14:24:29] INFO environ 4505826816 - .env not found - if you're not configuring your environment separately, check this.
 [16-03-2024 14:24:29] INFO environ 4505826816 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:36:46] INFO autoreload 140024469618688 - Watching for file changes with StatReloader
+[16-03-2024 14:36:46] INFO autoreload 140024469618688 - Watching for file changes with StatReloader
+[16-03-2024 14:36:47] INFO environ 140024469618688 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 14:36:47] INFO environ 140024469618688 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:27:32] INFO autoreload 140396767862784 - Watching for file changes with StatReloader
+[16-03-2024 16:27:32] INFO autoreload 140396767862784 - Watching for file changes with StatReloader
+[16-03-2024 16:27:32] INFO environ 140396767862784 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:27:32] INFO environ 140396767862784 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:29:38] INFO autoreload 140140212658176 - Watching for file changes with StatReloader
+[16-03-2024 16:29:38] INFO autoreload 140140212658176 - Watching for file changes with StatReloader
+[16-03-2024 16:29:38] INFO environ 140140212658176 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:29:38] INFO environ 140140212658176 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:30:12] INFO autoreload 140249065775104 - Watching for file changes with StatReloader
+[16-03-2024 16:30:12] INFO autoreload 140249065775104 - Watching for file changes with StatReloader
+[16-03-2024 16:30:12] INFO environ 140249065775104 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:30:12] INFO environ 140249065775104 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:30:17] INFO basehttp 140248902264384 - "GET / HTTP/1.1" 200 40
+[16-03-2024 16:30:17] INFO basehttp 140248902264384 - "GET / HTTP/1.1" 200 40
+[16-03-2024 16:30:17] INFO basehttp 140248902264384 - "GET / HTTP/1.1" 200 40
+[16-03-2024 16:30:19] WARNING log 140248902264384 - Not Found: /favicon.ico
+[16-03-2024 16:30:19] WARNING log 140248902264384 - Not Found: /favicon.ico
+[16-03-2024 16:30:19] WARNING log 140248902264384 - Not Found: /favicon.ico
+[16-03-2024 16:30:19] WARNING basehttp 140248902264384 - "GET /favicon.ico HTTP/1.1" 404 2659
+[16-03-2024 16:30:19] WARNING basehttp 140248902264384 - "GET /favicon.ico HTTP/1.1" 404 2659
+[16-03-2024 16:30:19] WARNING basehttp 140248902264384 - "GET /favicon.ico HTTP/1.1" 404 2659
+[16-03-2024 16:31:30] INFO environ 139815627968512 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 16:31:30] INFO environ 139815627968512 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:07:12] INFO environ 140689437835264 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:07:12] INFO environ 140689437835264 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:07:21] INFO environ 140689437835264 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:07:21] INFO environ 140689437835264 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:07:33] INFO environ 140689437835264 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:07:33] INFO environ 140689437835264 - .env not found - if you're not configuring your environment separately, check this.
+[16-03-2024 17:55:34] WARNING log 140689437835264 - Not Found: /.env
+[16-03-2024 17:55:34] WARNING log 140689437835264 - Not Found: /.env
+[16-03-2024 17:55:34] WARNING log 140689437835264 - Not Found: /.env
+[17-03-2024 08:12:16] WARNING log 140689437835264 - Forbidden: /bills/bills/
+[17-03-2024 08:12:16] WARNING log 140689437835264 - Forbidden: /bills/bills/
+[17-03-2024 08:12:16] WARNING log 140689437835264 - Forbidden: /bills/bills/
+[17-03-2024 08:12:29] WARNING log 140689437835264 - Forbidden: /bills/bet/
+[17-03-2024 08:12:29] WARNING log 140689437835264 - Forbidden: /bills/bet/
+[17-03-2024 08:12:29] WARNING log 140689437835264 - Forbidden: /bills/bet/
+[17-03-2024 08:13:22] WARNING log 140689437835264 - Forbidden: /bills/bet/
+[17-03-2024 08:13:22] WARNING log 140689437835264 - Forbidden: /bills/bet/
+[17-03-2024 08:13:22] WARNING log 140689437835264 - Forbidden: /bills/bet/
+[17-03-2024 08:13:31] WARNING log 140689437835264 - Forbidden: /bills/bills/
+[17-03-2024 08:13:31] WARNING log 140689437835264 - Forbidden: /bills/bills/
+[17-03-2024 08:13:31] WARNING log 140689437835264 - Forbidden: /bills/bills/
+[17-03-2024 08:29:34] INFO environ 140532992942080 - .env not found - if you're not configuring your environment separately, check this.
+[17-03-2024 08:29:34] INFO environ 140532992942080 - .env not found - if you're not configuring your environment separately, check this.
+[17-03-2024 08:29:55] INFO autoreload 140574664482816 - Watching for file changes with StatReloader
+[17-03-2024 08:29:55] INFO autoreload 140574664482816 - Watching for file changes with StatReloader
+[17-03-2024 08:29:56] INFO environ 140574664482816 - .env not found - if you're not configuring your environment separately, check this.
+[17-03-2024 08:29:56] INFO environ 140574664482816 - .env not found - if you're not configuring your environment separately, check this.
+[17-03-2024 08:31:10] INFO environ 140114198421504 - .env not found - if you're not configuring your environment separately, check this.
+[17-03-2024 08:31:10] INFO environ 140114198421504 - .env not found - if you're not configuring your environment separately, check this.

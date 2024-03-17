@@ -206,10 +206,10 @@ SIMPLE_JWT = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT='/home/paylabfi/backend.paylab.finance/static/'
+STATIC_ROOT='/usr/paylab/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/paylabfi/backend.paylab.finance/media/'
+MEDIA_ROOT = '/usr/paylab/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_FROM_USER = 'supports@paylab.finance'
