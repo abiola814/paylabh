@@ -466,8 +466,8 @@ def confirm_coralpay(customer_number,biller,slug):
 
 def all_electric(request=None,id=None):
 
-    # url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/1"
-    url = "https://vas.coralpay.com/vas-service/api/biller-groups/1"
+    url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/1"
+    # url = "https://vas.coralpay.com/vas-service/api/biller-groups/1"
     
 
     headers=headers = {
