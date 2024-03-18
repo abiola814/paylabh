@@ -212,12 +212,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = '/usr/paylab/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_FROM_USER = 'stoneshq20@gmail.com'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER =  'stoneshq20@gmail.com'
-EMAIL_HOST_PASSWORD ='dvysrkgxubvykvbp'  
-EMAIL_PORT = 587  # Gmail SMTP port
-EMAIL_USE_TLS = True
+EMAIL_FROM_USER = 'supports@paylab.finance'
+EMAIL_HOST = 'mail.paylab.finance'
+EMAIL_HOST_USER =  'supports@paylab.finance'
+EMAIL_HOST_PASSWORD ='hub360@123'  
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 # EMAIL_USE_TLS = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
