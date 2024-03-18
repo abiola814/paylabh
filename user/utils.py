@@ -108,7 +108,7 @@ def send_activation_mail(id,mail):
         if EmailVerifyTable.objects.filter(email=mail).exists():
             store_otp = EmailVerifyTable.objects.get(email=mail)
             store_otp.code = code
-            share_otp.save()
+            store_otp.save()
         else:
             EmailVerifyTable(email=mail,code=code).save()
         send_mail(subject, email, 'partytime@mjobi.com' , [mail], fail_silently=False)
