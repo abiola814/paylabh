@@ -113,9 +113,9 @@ def send_activation_mail(id,mail):
             EmailVerifyTable(email=mail,code=code).save()
         send_mail(subject, email, 'partytime@mjobi.com' , [mail], fail_silently=False)
         return successResponse(id,f"check your {mail} to activate it",None,None)
-    except:
+    except Exception as e:
 
-        return errorResponse(id,f"unable to send to email activation code to {mail}")
+        return errorResponse(id,f"unable to send to email activation code to {mail} {e}")
 
 def send_activation_phone(id,phone):
     if PhoneVerifyTable.objects.filter(phone=phone).exists():
