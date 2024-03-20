@@ -68,3 +68,1682 @@
 [17-03-2024 09:22:51] INFO autoreload 4491609600 - Watching for file changes with StatReloader
 [17-03-2024 09:22:51] INFO environ 4491609600 - .env not found - if you're not configuring your environment separately, check this.
 [17-03-2024 09:22:51] INFO environ 4491609600 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:14:40] INFO autoreload 4457379328 - Watching for file changes with StatReloader
+[20-03-2024 13:14:40] INFO autoreload 4457379328 - Watching for file changes with StatReloader
+[20-03-2024 13:14:40] INFO environ 4457379328 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:14:40] INFO environ 4457379328 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:15:41] INFO utils 123145367629824 - referenceId:3b8b4579,{'email': 'kingswey96@gmail.com', 'last': 'john', 'first': 'logan', 'phone': '23408101464917', 'password': 'Password1@'}
+[20-03-2024 13:15:41] INFO utils 123145367629824 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 15, 41, 557303), 'referenceId': '3b8b4579', 'requestType': 'outbound', 'message': 'sorry, email is not verified', 'status': True}
+[20-03-2024 13:15:41] INFO basehttp 123145367629824 - "POST /user/signup/ HTTP/1.1" 200 149
+[20-03-2024 13:15:41] INFO basehttp 123145367629824 - "POST /user/signup/ HTTP/1.1" 200 149
+[20-03-2024 13:15:41] INFO basehttp 123145367629824 - "POST /user/signup/ HTTP/1.1" 200 149
+[20-03-2024 13:15:47] INFO utils 123145367629824 - referenceId:39d2ab0e,{'email': 'kingswey96@gmail.com'}
+[20-03-2024 13:15:49] INFO utils 123145367629824 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 15, 49, 262949), 'referenceId': '39d2ab0e', 'requestType': 'outbound', 'message': 'unable to send to email activation code to kingswey96@gmail.com [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)', 'status': False}
+[20-03-2024 13:15:49] WARNING log 123145367629824 - Bad Request: /user/activatemail/
+[20-03-2024 13:15:49] WARNING log 123145367629824 - Bad Request: /user/activatemail/
+[20-03-2024 13:15:49] WARNING log 123145367629824 - Bad Request: /user/activatemail/
+[20-03-2024 13:15:49] WARNING basehttp 123145367629824 - "POST /user/activatemail/ HTTP/1.1" 400 298
+[20-03-2024 13:15:49] WARNING basehttp 123145367629824 - "POST /user/activatemail/ HTTP/1.1" 400 298
+[20-03-2024 13:15:49] WARNING basehttp 123145367629824 - "POST /user/activatemail/ HTTP/1.1" 400 298
+[20-03-2024 13:16:25] INFO environ 4558501376 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:16:25] INFO environ 4558501376 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:16:45] INFO autoreload 4638828032 - Watching for file changes with StatReloader
+[20-03-2024 13:16:45] INFO autoreload 4638828032 - Watching for file changes with StatReloader
+[20-03-2024 13:16:45] INFO environ 4638828032 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:16:46] INFO environ 4638828032 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:16:51] INFO basehttp 123145441443840 - "GET / HTTP/1.1" 200 40
+[20-03-2024 13:16:51] INFO basehttp 123145441443840 - "GET / HTTP/1.1" 200 40
+[20-03-2024 13:16:51] INFO basehttp 123145441443840 - "GET / HTTP/1.1" 200 40
+[20-03-2024 13:16:52] WARNING log 123145441443840 - Not Found: /favicon.ico
+[20-03-2024 13:16:52] WARNING log 123145441443840 - Not Found: /favicon.ico
+[20-03-2024 13:16:52] WARNING log 123145441443840 - Not Found: /favicon.ico
+[20-03-2024 13:16:52] WARNING basehttp 123145441443840 - "GET /favicon.ico HTTP/1.1" 404 2655
+[20-03-2024 13:16:52] WARNING basehttp 123145441443840 - "GET /favicon.ico HTTP/1.1" 404 2655
+[20-03-2024 13:16:52] WARNING basehttp 123145441443840 - "GET /favicon.ico HTTP/1.1" 404 2655
+[20-03-2024 13:16:54] WARNING log 123145441443840 - Not Found: /a
+[20-03-2024 13:16:54] WARNING log 123145441443840 - Not Found: /a
+[20-03-2024 13:16:54] WARNING log 123145441443840 - Not Found: /a
+[20-03-2024 13:16:54] WARNING basehttp 123145441443840 - "GET /a HTTP/1.1" 404 2625
+[20-03-2024 13:16:54] WARNING basehttp 123145441443840 - "GET /a HTTP/1.1" 404 2625
+[20-03-2024 13:16:54] WARNING basehttp 123145441443840 - "GET /a HTTP/1.1" 404 2625
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin HTTP/1.1" 301 0
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin HTTP/1.1" 301 0
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin HTTP/1.1" 301 0
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin/ HTTP/1.1" 302 0
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin/ HTTP/1.1" 302 0
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin/ HTTP/1.1" 302 0
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+[20-03-2024 13:16:58] INFO basehttp 123145491812352 - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[20-03-2024 13:16:58] INFO basehttp 123145491812352 - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[20-03-2024 13:16:58] INFO basehttp 123145491812352 - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[20-03-2024 13:16:58] INFO basehttp 123145475022848 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+[20-03-2024 13:16:58] INFO basehttp 123145475022848 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+[20-03-2024 13:16:58] INFO basehttp 123145475022848 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+[20-03-2024 13:16:58] INFO basehttp 123145458233344 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+[20-03-2024 13:16:58] INFO basehttp 123145508601856 - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+[20-03-2024 13:16:58] INFO basehttp 123145458233344 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+[20-03-2024 13:16:58] INFO basehttp 123145508601856 - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+[20-03-2024 13:16:58] INFO basehttp 123145458233344 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+[20-03-2024 13:16:58] INFO basehttp 123145508601856 - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[20-03-2024 13:16:58] INFO basehttp 123145441443840 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[20-03-2024 13:16:58] INFO basehttp 123145508601856 - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+[20-03-2024 13:16:58] INFO basehttp 123145508601856 - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+[20-03-2024 13:16:58] INFO basehttp 123145508601856 - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+[20-03-2024 13:17:02] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4346
+[20-03-2024 13:17:02] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4346
+[20-03-2024 13:17:02] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4346
+[20-03-2024 13:17:12] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4352
+[20-03-2024 13:17:12] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4352
+[20-03-2024 13:17:12] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4352
+[20-03-2024 13:17:21] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4347
+[20-03-2024 13:17:21] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4347
+[20-03-2024 13:17:21] INFO basehttp 123145508601856 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4347
+[20-03-2024 13:20:11] INFO environ 4672517632 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:20:11] INFO environ 4672517632 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:22] INFO environ 4502185472 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:22] INFO environ 4502185472 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:29] INFO environ 4668560896 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:30] INFO environ 4668560896 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:34] INFO autoreload 4535989760 - Watching for file changes with StatReloader
+[20-03-2024 13:21:34] INFO autoreload 4535989760 - Watching for file changes with StatReloader
+[20-03-2024 13:21:34] INFO environ 4535989760 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:34] INFO environ 4535989760 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:42] INFO environ 4627236352 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:43] INFO environ 4627236352 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:57] INFO autoreload 4558284288 - Watching for file changes with StatReloader
+[20-03-2024 13:21:57] INFO autoreload 4558284288 - Watching for file changes with StatReloader
+[20-03-2024 13:21:57] INFO environ 4558284288 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:21:58] INFO environ 4558284288 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /admin/ HTTP/1.1" 200 10911
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /admin/ HTTP/1.1" 200 10911
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /admin/ HTTP/1.1" 200 10911
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[20-03-2024 13:22:04] INFO basehttp 123145514323968 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[20-03-2024 13:22:04] INFO basehttp 123145531113472 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[20-03-2024 13:22:04] INFO basehttp 123145531113472 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[20-03-2024 13:22:04] INFO basehttp 123145531113472 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /admin/user/emailverifytable/ HTTP/1.1" 200 13612
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /admin/user/emailverifytable/ HTTP/1.1" 200 13612
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /admin/user/emailverifytable/ HTTP/1.1" 200 13612
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+[20-03-2024 13:22:07] INFO basehttp 123145581481984 - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+[20-03-2024 13:22:07] INFO basehttp 123145581481984 - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+[20-03-2024 13:22:07] INFO basehttp 123145564692480 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[20-03-2024 13:22:07] INFO basehttp 123145564692480 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[20-03-2024 13:22:07] INFO basehttp 123145564692480 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[20-03-2024 13:22:07] INFO basehttp 123145581481984 - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+[20-03-2024 13:22:07] INFO basehttp 123145581481984 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[20-03-2024 13:22:07] INFO basehttp 123145581481984 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[20-03-2024 13:22:07] INFO basehttp 123145581481984 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[20-03-2024 13:22:07] INFO basehttp 123145564692480 - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[20-03-2024 13:22:07] INFO basehttp 123145531113472 - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[20-03-2024 13:22:07] INFO basehttp 123145564692480 - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[20-03-2024 13:22:07] INFO basehttp 123145564692480 - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[20-03-2024 13:22:07] INFO basehttp 123145514323968 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:07] INFO basehttp 123145514323968 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:07] INFO basehttp 123145514323968 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:07] INFO basehttp 123145547902976 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+[20-03-2024 13:22:07] INFO basehttp 123145547902976 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+[20-03-2024 13:22:07] INFO basehttp 123145547902976 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[20-03-2024 13:22:07] INFO basehttp 123145598271488 - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /admin/user/emailverifytable/7/change/ HTTP/1.1" 200 13338
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /admin/user/emailverifytable/7/change/ HTTP/1.1" 200 13338
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /admin/user/emailverifytable/7/change/ HTTP/1.1" 200 13338
+[20-03-2024 13:22:10] INFO basehttp 123145514323968 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[20-03-2024 13:22:10] INFO basehttp 123145514323968 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[20-03-2024 13:22:10] INFO basehttp 123145514323968 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+[20-03-2024 13:22:10] INFO basehttp 123145547902976 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:10] INFO basehttp 123145547902976 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:10] INFO basehttp 123145547902976 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[20-03-2024 13:22:10] INFO basehttp 123145598271488 - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[20-03-2024 13:22:10] INFO basehttp 123145547902976 - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+[20-03-2024 13:22:10] INFO basehttp 123145547902976 - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+[20-03-2024 13:22:10] INFO basehttp 123145547902976 - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "POST /admin/user/emailverifytable/7/change/ HTTP/1.1" 302 0
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "POST /admin/user/emailverifytable/7/change/ HTTP/1.1" 302 0
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "POST /admin/user/emailverifytable/7/change/ HTTP/1.1" 302 0
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /admin/user/emailverifytable/ HTTP/1.1" 200 13853
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /admin/user/emailverifytable/ HTTP/1.1" 200 13853
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /admin/user/emailverifytable/ HTTP/1.1" 200 13853
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[20-03-2024 13:22:18] INFO basehttp 123145547902976 - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[20-03-2024 13:22:29] INFO utils 123145615060992 - referenceId:4a10272d,{'credential': 'oladunjoye1998@gmail.com', 'password': 'mike1234'}
+[20-03-2024 13:22:29] INFO utils 123145615060992 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 22, 29, 669513), 'referenceId': '4a10272d', 'requestType': 'outbound', 'message': 'invalid credential', 'status': False}
+[20-03-2024 13:22:29] WARNING log 123145615060992 - Bad Request: /user/login/
+[20-03-2024 13:22:29] WARNING log 123145615060992 - Bad Request: /user/login/
+[20-03-2024 13:22:29] WARNING log 123145615060992 - Bad Request: /user/login/
+[20-03-2024 13:22:29] WARNING basehttp 123145615060992 - "POST /user/login/ HTTP/1.1" 400 140
+[20-03-2024 13:22:29] WARNING basehttp 123145615060992 - "POST /user/login/ HTTP/1.1" 400 140
+[20-03-2024 13:22:29] WARNING basehttp 123145615060992 - "POST /user/login/ HTTP/1.1" 400 140
+[20-03-2024 13:22:36] INFO basehttp 123145547902976 - "GET /admin/user/emailverifytable/7/change/ HTTP/1.1" 200 13337
+[20-03-2024 13:22:36] INFO basehttp 123145547902976 - "GET /admin/user/emailverifytable/7/change/ HTTP/1.1" 200 13337
+[20-03-2024 13:22:36] INFO basehttp 123145547902976 - "GET /admin/user/emailverifytable/7/change/ HTTP/1.1" 200 13337
+[20-03-2024 13:22:46] INFO utils 123145615060992 - referenceId:22fc21f0,{'email': 'kingswey96@gmail.com', 'last': 'john', 'first': 'logan', 'phone': '23408101464917', 'password': 'Password1@'}
+[20-03-2024 13:22:48] INFO utils 123145615060992 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 22, 48, 530448), 'referenceId': '22fc21f0', 'requestType': 'outbound', 'message': 'login successfull', 'status': True, 'data': {'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyNjY4OTY3LCJpYXQiOjE3MTA5NDA5NjcsImp0aSI6IjczZDQ0MDE1MDljODRlZTdiMjNkZmVjZDBmMWNiYTMxIiwidXNlcl9pZCI6OX0.W9L_K0Gp9JC6IcjLdJIGcCEiTCtwZzjgOkU8i9ZdxY4', 'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNjEyNDk2NywiaWF0IjoxNzEwOTQwOTY3LCJqdGkiOiJkYjYwOWE4YzZlOWI0YTk3OGM5ZDU1NDFhZjBlZmE5ZCIsInVzZXJfaWQiOjl9.vTSLYfU2gZBuVF0SSP18dAZfWl_TXyjTZJ2KkwvdiEs'}}
+[20-03-2024 13:22:48] INFO basehttp 123145615060992 - "POST /user/signup/ HTTP/1.1" 200 629
+[20-03-2024 13:22:48] INFO basehttp 123145615060992 - "POST /user/signup/ HTTP/1.1" 200 629
+[20-03-2024 13:22:48] INFO basehttp 123145615060992 - "POST /user/signup/ HTTP/1.1" 200 629
+[20-03-2024 13:23:17] ERROR log 123145615060992 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:23:17] ERROR log 123145615060992 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:23:17] ERROR log 123145615060992 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:23:17] ERROR basehttp 123145615060992 - "POST /account/vault/ HTTP/1.1" 500 99824
+[20-03-2024 13:23:17] ERROR basehttp 123145615060992 - "POST /account/vault/ HTTP/1.1" 500 99824
+[20-03-2024 13:23:17] ERROR basehttp 123145615060992 - "POST /account/vault/ HTTP/1.1" 500 99824
+[20-03-2024 13:25:14] INFO autoreload 4558284288 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:25:14] INFO autoreload 4558284288 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:25:14] INFO autoreload 4378416640 - Watching for file changes with StatReloader
+[20-03-2024 13:25:14] INFO autoreload 4378416640 - Watching for file changes with StatReloader
+[20-03-2024 13:25:15] INFO environ 4378416640 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:25:15] INFO environ 4378416640 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:25:19] ERROR log 123145527144448 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:25:19] ERROR log 123145527144448 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:25:19] ERROR log 123145527144448 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:25:19] ERROR basehttp 123145527144448 - "POST /account/vault/ HTTP/1.1" 500 99811
+[20-03-2024 13:25:19] ERROR basehttp 123145527144448 - "POST /account/vault/ HTTP/1.1" 500 99811
+[20-03-2024 13:25:19] ERROR basehttp 123145527144448 - "POST /account/vault/ HTTP/1.1" 500 99811
+[20-03-2024 13:25:38] INFO autoreload 4378416640 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:25:38] INFO autoreload 4378416640 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:25:38] INFO autoreload 4624799232 - Watching for file changes with StatReloader
+[20-03-2024 13:25:38] INFO autoreload 4624799232 - Watching for file changes with StatReloader
+[20-03-2024 13:25:38] INFO environ 4624799232 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:25:39] INFO environ 4624799232 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:25:41] ERROR log 123145535520768 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:25:41] ERROR log 123145535520768 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:25:41] ERROR log 123145535520768 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:25:41] ERROR basehttp 123145535520768 - "POST /account/vault/ HTTP/1.1" 500 99769
+[20-03-2024 13:25:41] ERROR basehttp 123145535520768 - "POST /account/vault/ HTTP/1.1" 500 99769
+[20-03-2024 13:25:41] ERROR basehttp 123145535520768 - "POST /account/vault/ HTTP/1.1" 500 99769
+[20-03-2024 13:25:59] INFO autoreload 4624799232 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:25:59] INFO autoreload 4624799232 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:26:00] INFO autoreload 4432938496 - Watching for file changes with StatReloader
+[20-03-2024 13:26:00] INFO autoreload 4432938496 - Watching for file changes with StatReloader
+[20-03-2024 13:26:00] INFO environ 4432938496 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:26:00] INFO environ 4432938496 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:26:04] ERROR log 123145529569280 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:26:04] ERROR log 123145529569280 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:26:04] ERROR log 123145529569280 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 85, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:26:04] ERROR basehttp 123145529569280 - "POST /account/vault/ HTTP/1.1" 500 99787
+[20-03-2024 13:26:04] ERROR basehttp 123145529569280 - "POST /account/vault/ HTTP/1.1" 500 99787
+[20-03-2024 13:26:04] ERROR basehttp 123145529569280 - "POST /account/vault/ HTTP/1.1" 500 99787
+[20-03-2024 13:27:40] INFO autoreload 4432938496 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:27:40] INFO autoreload 4432938496 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:27:40] INFO autoreload 4609095168 - Watching for file changes with StatReloader
+[20-03-2024 13:27:40] INFO autoreload 4609095168 - Watching for file changes with StatReloader
+[20-03-2024 13:27:40] INFO environ 4609095168 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:27:41] INFO environ 4609095168 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:27:46] ERROR log 123145419403264 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:27:46] ERROR log 123145419403264 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:27:46] ERROR log 123145419403264 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:27:46] ERROR basehttp 123145419403264 - "POST /account/vault/ HTTP/1.1" 500 99723
+[20-03-2024 13:27:46] ERROR basehttp 123145419403264 - "POST /account/vault/ HTTP/1.1" 500 99723
+[20-03-2024 13:27:46] ERROR basehttp 123145419403264 - "POST /account/vault/ HTTP/1.1" 500 99723
+[20-03-2024 13:35:30] INFO autoreload 4609095168 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:35:30] INFO autoreload 4609095168 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:35:30] INFO autoreload 4364625408 - Watching for file changes with StatReloader
+[20-03-2024 13:35:30] INFO autoreload 4364625408 - Watching for file changes with StatReloader
+[20-03-2024 13:35:30] INFO environ 4364625408 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:35:31] INFO environ 4364625408 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:35:42] INFO autoreload 4364625408 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:35:42] INFO autoreload 4364625408 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:35:43] INFO autoreload 4710127104 - Watching for file changes with StatReloader
+[20-03-2024 13:35:43] INFO autoreload 4710127104 - Watching for file changes with StatReloader
+[20-03-2024 13:35:43] INFO environ 4710127104 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:35:43] INFO environ 4710127104 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:36:03] ERROR log 123145516085248 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 89, in create
+    name =  validated_data["name"]
+            ~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+[20-03-2024 13:36:03] ERROR log 123145516085248 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 89, in create
+    name =  validated_data["name"]
+            ~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+[20-03-2024 13:36:03] ERROR log 123145516085248 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 89, in create
+    name =  validated_data["name"]
+            ~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+[20-03-2024 13:36:03] ERROR basehttp 123145516085248 - "POST /account/vault/ HTTP/1.1" 500 99800
+[20-03-2024 13:36:03] ERROR basehttp 123145516085248 - "POST /account/vault/ HTTP/1.1" 500 99800
+[20-03-2024 13:36:03] ERROR basehttp 123145516085248 - "POST /account/vault/ HTTP/1.1" 500 99800
+[20-03-2024 13:36:14] INFO autoreload 4710127104 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:36:14] INFO autoreload 4710127104 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:36:15] INFO autoreload 4543202816 - Watching for file changes with StatReloader
+[20-03-2024 13:36:15] INFO autoreload 4543202816 - Watching for file changes with StatReloader
+[20-03-2024 13:36:15] INFO environ 4543202816 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:36:15] INFO environ 4543202816 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:36:22] INFO autoreload 4543202816 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:36:22] INFO autoreload 4543202816 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:36:23] INFO autoreload 4628014592 - Watching for file changes with StatReloader
+[20-03-2024 13:36:23] INFO autoreload 4628014592 - Watching for file changes with StatReloader
+[20-03-2024 13:36:23] INFO environ 4628014592 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:36:23] INFO environ 4628014592 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:36:55] INFO autoreload 4628014592 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:36:55] INFO autoreload 4628014592 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:36:56] INFO autoreload 4752807424 - Watching for file changes with StatReloader
+[20-03-2024 13:36:56] INFO autoreload 4752807424 - Watching for file changes with StatReloader
+[20-03-2024 13:36:56] INFO environ 4752807424 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:36:56] INFO environ 4752807424 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:37:18] INFO autoreload 4752807424 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:37:18] INFO autoreload 4752807424 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:37:18] INFO autoreload 4618634752 - Watching for file changes with StatReloader
+[20-03-2024 13:37:18] INFO autoreload 4618634752 - Watching for file changes with StatReloader
+[20-03-2024 13:37:18] INFO environ 4618634752 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:37:18] INFO environ 4618634752 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:37:34] ERROR log 123145494913024 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:37:34] ERROR log 123145494913024 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:37:34] ERROR log 123145494913024 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 68, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:37:34] ERROR basehttp 123145494913024 - "POST /account/vault/ HTTP/1.1" 500 99427
+[20-03-2024 13:37:34] ERROR basehttp 123145494913024 - "POST /account/vault/ HTTP/1.1" 500 99427
+[20-03-2024 13:37:34] ERROR basehttp 123145494913024 - "POST /account/vault/ HTTP/1.1" 500 99427
+[20-03-2024 13:42:49] INFO autoreload 4618634752 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:42:49] INFO autoreload 4618634752 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:42:50] INFO autoreload 4494448128 - Watching for file changes with StatReloader
+[20-03-2024 13:42:50] INFO autoreload 4494448128 - Watching for file changes with StatReloader
+[20-03-2024 13:42:50] INFO environ 4494448128 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:42:50] INFO environ 4494448128 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:43:02] INFO autoreload 4494448128 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:43:02] INFO autoreload 4494448128 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:43:02] INFO autoreload 4520605184 - Watching for file changes with StatReloader
+[20-03-2024 13:43:02] INFO autoreload 4520605184 - Watching for file changes with StatReloader
+[20-03-2024 13:43:02] INFO environ 4520605184 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:43:02] INFO environ 4520605184 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:43:53] INFO autoreload 4520605184 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:43:53] INFO autoreload 4520605184 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:43:53] INFO autoreload 4671297024 - Watching for file changes with StatReloader
+[20-03-2024 13:43:53] INFO autoreload 4671297024 - Watching for file changes with StatReloader
+[20-03-2024 13:43:54] INFO environ 4671297024 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:43:54] INFO environ 4671297024 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:44:08] INFO autoreload 4671297024 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:44:08] INFO autoreload 4671297024 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:44:09] INFO autoreload 4529382912 - Watching for file changes with StatReloader
+[20-03-2024 13:44:09] INFO autoreload 4529382912 - Watching for file changes with StatReloader
+[20-03-2024 13:44:09] INFO environ 4529382912 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:44:09] INFO environ 4529382912 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:44:14] ERROR log 123145374257152 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 89, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:44:14] ERROR log 123145374257152 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 89, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:44:14] ERROR log 123145374257152 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 89, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 86, in create
+    vault_type = validated_data['vault_type']
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'vault_type'
+[20-03-2024 13:44:14] ERROR basehttp 123145374257152 - "POST /account/vault/ HTTP/1.1" 500 99689
+[20-03-2024 13:44:14] ERROR basehttp 123145374257152 - "POST /account/vault/ HTTP/1.1" 500 99689
+[20-03-2024 13:44:14] ERROR basehttp 123145374257152 - "POST /account/vault/ HTTP/1.1" 500 99689
+[20-03-2024 13:45:20] INFO autoreload 4529382912 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:45:20] INFO autoreload 4529382912 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:45:21] INFO autoreload 4630480384 - Watching for file changes with StatReloader
+[20-03-2024 13:45:21] INFO autoreload 4630480384 - Watching for file changes with StatReloader
+[20-03-2024 13:45:21] INFO environ 4630480384 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:45:21] INFO environ 4630480384 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:45:37] ERROR log 123145406464000 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 88, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `currency_code` is not valid for model `Vault`.
+[20-03-2024 13:45:37] ERROR log 123145406464000 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 88, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `currency_code` is not valid for model `Vault`.
+[20-03-2024 13:45:37] ERROR log 123145406464000 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 88, in post
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `currency_code` is not valid for model `Vault`.
+[20-03-2024 13:45:37] ERROR basehttp 123145406464000 - "POST /account/vault/ HTTP/1.1" 500 136540
+[20-03-2024 13:45:37] ERROR basehttp 123145406464000 - "POST /account/vault/ HTTP/1.1" 500 136540
+[20-03-2024 13:45:37] ERROR basehttp 123145406464000 - "POST /account/vault/ HTTP/1.1" 500 136540
+[20-03-2024 13:45:51] INFO autoreload 4630480384 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:45:51] INFO autoreload 4630480384 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:45:52] INFO autoreload 4419270144 - Watching for file changes with StatReloader
+[20-03-2024 13:45:52] INFO autoreload 4419270144 - Watching for file changes with StatReloader
+[20-03-2024 13:45:52] INFO environ 4419270144 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:45:52] INFO environ 4419270144 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:00] INFO autoreload 4419270144 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:46:00] INFO autoreload 4419270144 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:46:00] INFO autoreload 4373988864 - Watching for file changes with StatReloader
+[20-03-2024 13:46:00] INFO autoreload 4373988864 - Watching for file changes with StatReloader
+[20-03-2024 13:46:00] INFO environ 4373988864 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:01] INFO environ 4373988864 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:09] INFO autoreload 4373988864 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:46:09] INFO autoreload 4373988864 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py changed, reloading.
+[20-03-2024 13:46:09] INFO autoreload 4507944448 - Watching for file changes with StatReloader
+[20-03-2024 13:46:09] INFO autoreload 4507944448 - Watching for file changes with StatReloader
+[20-03-2024 13:46:10] INFO environ 4507944448 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:10] INFO environ 4507944448 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:23] INFO autoreload 4507944448 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:46:23] INFO autoreload 4507944448 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:46:24] INFO autoreload 4693890560 - Watching for file changes with StatReloader
+[20-03-2024 13:46:24] INFO autoreload 4693890560 - Watching for file changes with StatReloader
+[20-03-2024 13:46:24] INFO environ 4693890560 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:24] INFO environ 4693890560 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:46:32] ERROR log 123145397276672 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 108, in create
+    percent = validated_data['percentage']
+              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'percentage'
+[20-03-2024 13:46:32] ERROR log 123145397276672 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 108, in create
+    percent = validated_data['percentage']
+              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'percentage'
+[20-03-2024 13:46:32] ERROR log 123145397276672 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 108, in create
+    percent = validated_data['percentage']
+              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'percentage'
+[20-03-2024 13:46:32] ERROR basehttp 123145397276672 - "POST /account/vault/ HTTP/1.1" 500 104498
+[20-03-2024 13:46:32] ERROR basehttp 123145397276672 - "POST /account/vault/ HTTP/1.1" 500 104498
+[20-03-2024 13:46:32] ERROR basehttp 123145397276672 - "POST /account/vault/ HTTP/1.1" 500 104498
+[20-03-2024 13:50:09] INFO autoreload 4693890560 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:50:09] INFO autoreload 4693890560 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:50:09] INFO autoreload 4582802944 - Watching for file changes with StatReloader
+[20-03-2024 13:50:09] INFO autoreload 4582802944 - Watching for file changes with StatReloader
+[20-03-2024 13:50:10] INFO environ 4582802944 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:50:10] INFO environ 4582802944 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:50:31] ERROR log 123145455841280 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 113, in create
+    percentage = int(total_amount / saved_amount) * 100
+                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+decimal.DivisionByZero: [<class 'decimal.DivisionByZero'>]
+[20-03-2024 13:50:31] ERROR log 123145455841280 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 113, in create
+    percentage = int(total_amount / saved_amount) * 100
+                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+decimal.DivisionByZero: [<class 'decimal.DivisionByZero'>]
+[20-03-2024 13:50:31] ERROR log 123145455841280 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 113, in create
+    percentage = int(total_amount / saved_amount) * 100
+                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+decimal.DivisionByZero: [<class 'decimal.DivisionByZero'>]
+[20-03-2024 13:50:31] ERROR basehttp 123145455841280 - "POST /account/vault/ HTTP/1.1" 500 105421
+[20-03-2024 13:50:31] ERROR basehttp 123145455841280 - "POST /account/vault/ HTTP/1.1" 500 105421
+[20-03-2024 13:50:31] ERROR basehttp 123145455841280 - "POST /account/vault/ HTTP/1.1" 500 105421
+[20-03-2024 13:52:32] INFO autoreload 4582802944 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:52:32] INFO autoreload 4582802944 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:52:33] INFO autoreload 4401239552 - Watching for file changes with StatReloader
+[20-03-2024 13:52:33] INFO autoreload 4401239552 - Watching for file changes with StatReloader
+[20-03-2024 13:52:33] INFO environ 4401239552 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:52:33] INFO environ 4401239552 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:52:35] ERROR log 123145480294400 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 113, in create
+    percentage = int(float(total_amount) / float(saved_amount)) * 100
+                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+[20-03-2024 13:52:35] ERROR log 123145480294400 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 113, in create
+    percentage = int(float(total_amount) / float(saved_amount)) * 100
+                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+[20-03-2024 13:52:35] ERROR log 123145480294400 - Internal Server Error: /account/vault/
+Traceback (most recent call last):
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/views.py", line 67, in post
+    vault = serializer.save()
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py", line 113, in create
+    percentage = int(float(total_amount) / float(saved_amount)) * 100
+                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+[20-03-2024 13:52:35] ERROR basehttp 123145480294400 - "POST /account/vault/ HTTP/1.1" 500 105369
+[20-03-2024 13:52:35] ERROR basehttp 123145480294400 - "POST /account/vault/ HTTP/1.1" 500 105369
+[20-03-2024 13:52:35] ERROR basehttp 123145480294400 - "POST /account/vault/ HTTP/1.1" 500 105369
+[20-03-2024 13:53:51] INFO autoreload 4401239552 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:53:51] INFO autoreload 4401239552 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:53:51] INFO autoreload 4678796800 - Watching for file changes with StatReloader
+[20-03-2024 13:53:51] INFO autoreload 4678796800 - Watching for file changes with StatReloader
+[20-03-2024 13:53:51] INFO environ 4678796800 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:53:51] INFO environ 4678796800 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:54:05] INFO utils 123145519374336 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 54, 5, 173494), 'referenceId': '466ff485', 'requestType': 'outbound', 'message': 'Vault created successfully.', 'status': True, 'data': {'id': '2', 'name': 'paul lock', 'vault_type': 'target', 'saved_amount': '10.00', 'percentage': 10000, 'payback_date': None, 'total_amount': '1000.00', 'frequency': 'daily', 'end_date': '2023-10-23', 'start_date': '2023-10-26', 'date_created': '2024-03-20T13:54:05.171399Z', 'duration': None}}
+[20-03-2024 13:54:05] INFO basehttp 123145519374336 - "POST /account/vault/ HTTP/1.1" 200 425
+[20-03-2024 13:54:05] INFO basehttp 123145519374336 - "POST /account/vault/ HTTP/1.1" 200 425
+[20-03-2024 13:54:05] INFO basehttp 123145519374336 - "POST /account/vault/ HTTP/1.1" 200 425
+[20-03-2024 13:54:46] INFO autoreload 4678796800 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:54:46] INFO autoreload 4678796800 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:54:46] INFO autoreload 4475536896 - Watching for file changes with StatReloader
+[20-03-2024 13:54:46] INFO autoreload 4475536896 - Watching for file changes with StatReloader
+[20-03-2024 13:54:47] INFO environ 4475536896 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:54:47] INFO environ 4475536896 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:54:50] INFO utils 123145565433856 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 54, 50, 262210), 'referenceId': '470ca963', 'requestType': 'outbound', 'message': 'Vault created successfully.', 'status': True, 'data': {'id': '3', 'name': 'paul lock', 'vault_type': 'target', 'saved_amount': '10.00', 'percentage': 0, 'payback_date': None, 'total_amount': '1000.00', 'frequency': 'daily', 'end_date': '2023-10-23', 'start_date': '2023-10-26', 'date_created': '2024-03-20T13:54:50.260224Z', 'duration': None}}
+[20-03-2024 13:54:50] INFO basehttp 123145565433856 - "POST /account/vault/ HTTP/1.1" 200 421
+[20-03-2024 13:54:50] INFO basehttp 123145565433856 - "POST /account/vault/ HTTP/1.1" 200 421
+[20-03-2024 13:54:50] INFO basehttp 123145565433856 - "POST /account/vault/ HTTP/1.1" 200 421
+[20-03-2024 13:56:06] INFO autoreload 4475536896 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:56:06] INFO autoreload 4475536896 - /Users/apple/Desktop/lop/paylabdsdes/paylab/wallet/serializer.py changed, reloading.
+[20-03-2024 13:56:06] INFO autoreload 4522391040 - Watching for file changes with StatReloader
+[20-03-2024 13:56:06] INFO autoreload 4522391040 - Watching for file changes with StatReloader
+[20-03-2024 13:56:07] INFO environ 4522391040 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:56:07] INFO environ 4522391040 - .env not found - if you're not configuring your environment separately, check this.
+[20-03-2024 13:56:16] INFO utils 123145601155072 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 56, 16, 406406), 'referenceId': '4ca3c267', 'requestType': 'outbound', 'message': 'Vault created successfully.', 'status': True, 'data': {'id': '4', 'name': 'paul lock', 'vault_type': 'target', 'saved_amount': '10.00', 'percentage': 1, 'payback_date': None, 'total_amount': '1000.00', 'frequency': 'daily', 'end_date': '2023-10-23', 'start_date': '2023-10-26', 'date_created': '2024-03-20T13:56:16.402364Z', 'duration': None}}
+[20-03-2024 13:56:16] INFO basehttp 123145601155072 - "POST /account/vault/ HTTP/1.1" 200 421
+[20-03-2024 13:56:16] INFO basehttp 123145601155072 - "POST /account/vault/ HTTP/1.1" 200 421
+[20-03-2024 13:56:16] INFO basehttp 123145601155072 - "POST /account/vault/ HTTP/1.1" 200 421
+[20-03-2024 13:56:45] INFO utils 123145601155072 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 56, 45, 457538), 'referenceId': '28a4e9ea', 'requestType': 'outbound', 'message': 'all Duration', 'status': True, 'data': [OrderedDict({'id': 1, 'percentage': 8, 'start': 11, 'end': 17}), OrderedDict({'id': 2, 'percentage': 10, 'start': 11, 'end': 22})]}
+[20-03-2024 13:56:45] INFO basehttp 123145601155072 - "GET /account/duration/ HTTP/1.1" 200 231
+[20-03-2024 13:56:45] INFO basehttp 123145601155072 - "GET /account/duration/ HTTP/1.1" 200 231
+[20-03-2024 13:56:45] INFO basehttp 123145601155072 - "GET /account/duration/ HTTP/1.1" 200 231
+[20-03-2024 13:57:06] INFO utils 123145601155072 - referenceId:ee9e8129,{'id': 2}
+[20-03-2024 13:57:06] INFO utils 123145601155072 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 57, 6, 775098), 'referenceId': 'ee9e8129', 'requestType': 'outbound', 'message': 'all Duration', 'status': True, 'data': [{'date': '2024-03-30', 'percentage': 0.7692307692307693}, {'date': '2024-03-31', 'percentage': 1.5384615384615385}, {'date': '2024-04-01', 'percentage': 2.307692307692308}, {'date': '2024-04-02', 'percentage': 3.076923076923077}, {'date': '2024-04-03', 'percentage': 3.8461538461538463}, {'date': '2024-04-04', 'percentage': 4.615384615384616}, {'date': '2024-04-05', 'percentage': 5.384615384615385}, {'date': '2024-04-06', 'percentage': 6.153846153846154}, {'date': '2024-04-07', 'percentage': 6.923076923076923}, {'date': '2024-04-08', 'percentage': 7.6923076923076925}, {'date': '2024-04-09', 'percentage': 8.461538461538462}, {'date': '2024-04-10', 'percentage': 9.230769230769232}, {'date': '2024-04-11', 'percentage': 10.0}]}
+[20-03-2024 13:57:06] INFO basehttp 123145601155072 - "POST /account/payback/ HTTP/1.1" 200 822
+[20-03-2024 13:57:06] INFO basehttp 123145601155072 - "POST /account/payback/ HTTP/1.1" 200 822
+[20-03-2024 13:57:06] INFO basehttp 123145601155072 - "POST /account/payback/ HTTP/1.1" 200 822
+[20-03-2024 13:58:13] INFO utils 123145601155072 - {'requestTime': datetime.datetime(2024, 3, 20, 13, 58, 13, 481654), 'referenceId': '9775d5cd', 'requestType': 'outbound', 'message': 'Vault created successfully.', 'status': True, 'data': {'id': '5', 'name': 'it worked', 'vault_type': 'safe', 'saved_amount': '100.00', 'percentage': 10, 'payback_date': '2023-11-24', 'total_amount': '100.00', 'frequency': None, 'end_date': None, 'start_date': None, 'date_created': '2024-03-20T13:58:13.478736Z', 'duration': 2}}
+[20-03-2024 13:58:13] INFO basehttp 123145601155072 - "POST /account/vault/ HTTP/1.1" 200 406
+[20-03-2024 13:58:13] INFO basehttp 123145601155072 - "POST /account/vault/ HTTP/1.1" 200 406
+[20-03-2024 13:58:13] INFO basehttp 123145601155072 - "POST /account/vault/ HTTP/1.1" 200 406

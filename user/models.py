@@ -100,7 +100,7 @@ def get_filename_ext(filepath):
 
 class User(AbstractBaseUser):
     phone_regex      = RegexValidator( regex=r'^\+?1?\d{9,14}$', message ="Phone number must be entered in the format: '+999999999'. Up to 14 digits allowed.")
-    phone            = models.CharField(validators=[phone_regex], max_length=17,unique=True)
+    phone            = models.CharField(validators=[phone_regex], max_length=17)
     first_name             = models.CharField(max_length = 20, blank = True, null = True)
     tag             = models.CharField(max_length = 20, blank = True, null = True)
     last_name         = models.CharField(max_length = 80, blank = True, null = True)

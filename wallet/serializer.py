@@ -75,7 +75,7 @@ class VaultaSerializer(serializers.ModelSerializer):
 
 
 
-class VaultSerializer(serializers.Serializer):
+class VaultSerializer(serializers.ModelSerializer):
 
     id = serializers.CharField(max_length=100,required=False)
     class Meta:
@@ -105,13 +105,12 @@ class VaultSerializer(serializers.Serializer):
 
         elif vault_type == 'target':
             start_date = validated_data['start_date']
-            percent = validated_data['percentage']
             end_date = validated_data['end_date']
             total_amount = validated_data['total_amount']
             frequency = validated_data['frequency']
             name =  validated_data["name"]
-            saved_amount = 0
-            percentage = int(total_amount / saved_amount) * 100
+            saved_amount = validated_data["saved_amount"]
+            percentage = float(saved_amount / total_amount) * 100
 
             vault_data = {
                 'vault_type': vault_type,
