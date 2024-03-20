@@ -100,6 +100,8 @@ class Vault(models.Model):
     ]
 
     name = models.CharField(max_length=20,null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL,null=True, blank=True)
+
     vault_type = models.CharField(max_length=10, choices=VAULT_TYPES,null=True, blank=True)
     saved_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     percentage = models.PositiveIntegerField(default=0)

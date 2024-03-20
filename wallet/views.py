@@ -73,9 +73,9 @@ class VaultView(APIView):
         vault_type = request.GET.get('vault_type')
         
         if vault_type == 'safe':
-            vaults = Vault.objects.filter(vault_type='safe')
+            vaults = Vault.objects.filter(vault_type='safe',user=request.user)
         elif vault_type == 'target':
-            vaults = Vault.objects.filter(vault_type='target')
+            vaults = Vault.objects.filter(vault_type='target',user=request.user)
         else:
             vaults = Vault.objects.all()
         

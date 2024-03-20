@@ -85,6 +85,7 @@ class VaultSerializer(serializers.ModelSerializer):
         vault_type = validated_data['vault_type']
         
         name =  validated_data["name"]
+        user = self.context['request'].user
 
 
         if vault_type == 'safe':
@@ -92,7 +93,7 @@ class VaultSerializer(serializers.ModelSerializer):
             duration = Duration.objects.get(id=id)  # You might need to adjust this based on your Duration model structure
             total_amount = validated_data['total_amount']
             #check if user have enough amount
-
+            
             vault_data = {
                 'vault_type': vault_type,
                 'saved_amount': total_amount,
@@ -100,7 +101,9 @@ class VaultSerializer(serializers.ModelSerializer):
                 'duration': duration,
                 'total_amount': total_amount,
                 "name":name,
-                "payback_date": validated_data["payback_date"]
+                "payback_date": validated_data["payback_date"],
+                "user":user
+
             }
 
         elif vault_type == 'target':
@@ -120,7 +123,8 @@ class VaultSerializer(serializers.ModelSerializer):
                 'end_date': end_date,
                 'total_amount': total_amount,
                 'frequency': frequency,
-                'name': name
+                'name': name,
+                "user":user
             }
 
         return Vault.objects.create(**vault_data)
