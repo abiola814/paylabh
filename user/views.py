@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.request import Request
 from .custom_auth import CustomAuthBackend
 from .models import User,EmailVerifyTable,PhoneVerifyTable
-from .utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
+from .utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse,send_welcome_mail
 import uuid
 from .jwt_token import create_jwt_for_user
 from user_agents import parse
@@ -91,6 +91,7 @@ class SignupView(generics.GenericAPIView):
             if user.active==False:
                 return errorResponse(id,"Your account is not activated")
             tokens = create_jwt_for_user(user)
+            send_welcome_mail(user)
             return successResponse(id,"login successfull","token",tokens)
         return successResponse(id,"Account successfully created")
         

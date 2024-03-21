@@ -62,7 +62,9 @@ class VaultView(APIView):
     def post(self, request, format=None):
         id = uuid.uuid4()
         id = str(id)[:8]
-        serializer = VaultSerializer(data=request.data["data"])
+        data =request.data["data"]
+        data["user"]=request.user
+        serializer = VaultSerializer(data=data)
         if serializer.is_valid():
             vault = serializer.save()
             return successResponse(id,'Vault created successfully.',"vault",serializer.data)

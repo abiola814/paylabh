@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Paylab!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: aliceblue;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: white;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .header-img {
+        max-width: 100%;
+      }
+      .code-container {
+        background-color: #0063c7;
+        text-align: center;
+      }
+      .code {
+        font-size: 30px;
+        color: white;
+        margin: 0;
+        padding: 20px;
+      }
+      .social-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .social-links img {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="container"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      align="center"
+    >
+      <tr>
+        <td>
+          <img
+            class="header-img"
+            src="https://res.cloudinary.com/wallnet/image/upload/v1710600960/templa_fzyrak.png"
+            alt="header-img"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 20px">
+          <h1 style="margin-top: 20px">Confirm Your Identity</h1>
+          <p>Dear User,</p>
+          <p>
+            Thank you for choosing Paylab! To ensure the security of your
+            account, we require a quick verification of your {{email}}.
+          </p>
+          <p>Your One-Time Passcode (OTP) is:</p>
+          <div class="code-container">
+            <p class="code">{{code}}</p>
+          </div>
+          <p>
+            Please enter this code within the next 10 minutes to complete the
+            verification process.
+          </p>
+          <p>
+            If you did not initiate this request or need assistance, please
+            contact our support team immediately at support@paylab.com
+          </p>
+          <p>
+            We appreciate your cooperation in maintaining the security of your
+            account.
+          </p>
+          <p>Best regards,<br />Paylab Team</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="social-links">
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="https://res.cloudinary.com/wallnet/image/upload/v1710605435/fb_hrqv6p.png"
+                alt="Facebook"
+            /></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="https://res.cloudinary.com/wallnet/image/upload/v1710605434/ig_d93fyh.png"
+                alt="Instagram"
+            /></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="https://res.cloudinary.com/wallnet/image/upload/v1710605434/x_ozojjs.png"
+                alt="Twitter"
+            /></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="https://res.cloudinary.com/wallnet/image/upload/v1710605434/link_qydmf0.png"
+                alt="LinkedIn"
+            /></a>
+          </div>
+          <p class="footer">Copright © 2024 | Paylab Ltd</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

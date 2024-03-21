@@ -85,7 +85,7 @@ class VaultSerializer(serializers.ModelSerializer):
         vault_type = validated_data['vault_type']
         
         name =  validated_data["name"]
-        user = self.context['request'].user
+        user = validated_data['user']
 
 
         if vault_type == 'safe':

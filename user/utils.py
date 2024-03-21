@@ -89,9 +89,25 @@ def validatingPassword(password):
 
     return True
 
+def send_welcome_mail(user):
+    subject = "Welcome Message"
+    email_template_name = "welcome_email.html"
+    
+
+    c = {
+    "first":user.first_name,
+    "last":user.last_name
+    }
+
+    email = render_to_string(email_template_name, c)
+    try:
+        send_mail(subject, email, 'supports@paylab.finance' , [user.email], fail_silently=False)
+    except Exception as e:
+        log_request(e)
+
 def send_activation_mail(id,mail):
     subject = "Account activation code"
-    email_template_name = "activation_email.txt"
+    email_template_name = "activation_email.html"
     
     code = generateCode(6)
     c = {
@@ -128,7 +144,7 @@ def send_password_reset_mail(id,associated_users):
     if associated_users.exists():
         for user in associated_users:
             subject = "Password Reset Requested"
-            email_template_name = "password_reset_email.txt"
+            email_template_name = "password_reset_email.html"
             code = generateCode(8)
             user.recoveryCode=code
             user.save()
