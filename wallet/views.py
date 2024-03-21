@@ -63,7 +63,7 @@ class VaultView(APIView):
         id = uuid.uuid4()
         id = str(id)[:8]
         data =request.data["data"]
-        data["user"]=request.user
+        data["user"]=request.user.id
         serializer = VaultSerializer(data=data)
         if serializer.is_valid():
             vault = serializer.save()

@@ -102,7 +102,7 @@ class VaultSerializer(serializers.ModelSerializer):
                 'total_amount': total_amount,
                 "name":name,
                 "payback_date": validated_data["payback_date"],
-                "user":user.id
+                "user":user
 
             }
 
@@ -124,7 +124,7 @@ class VaultSerializer(serializers.ModelSerializer):
                 'total_amount': total_amount,
                 'frequency': frequency,
                 'name': name,
-                "user":user.id
+                "user":user
             }
 
         return Vault.objects.create(**vault_data)
