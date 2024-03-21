@@ -79,7 +79,7 @@ class VaultView(APIView):
         elif vault_type == 'target':
             vaults = Vault.objects.filter(vault_type='target',user=request.user.id)
         else:
-            vaults = Vault.objects.all(user=request.user.id)
+            vaults = Vault.objects.filter(user=request.user.id)
         
 
         serializer_data=VaultSerializer(vaults, context={"request": request},many=True)
