@@ -130,7 +130,7 @@ class VaultSerializer(serializers.ModelSerializer):
         return Vault.objects.create(**vault_data)
     
     
-    def update(self, instance, validated_daa):
+    def update(self, instance, validated_data):
         user = self.context['request'].user
         currency_code = instance.currency_code
         # # Proceed with updating the instance using the validated_data
