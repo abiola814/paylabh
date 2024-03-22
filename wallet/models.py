@@ -8,6 +8,7 @@ class Wallet(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     currency_code = models.CharField(max_length=3)
     account_number = models.CharField(max_length=30,blank=True,null=True)
+    bank_name = models.CharField(max_length=30,blank=True,null=True)
     account_name = models.CharField(max_length=80,blank=True,null=True)
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     limit = models.DecimalField(max_digits=10, decimal_places=2, default=200000)

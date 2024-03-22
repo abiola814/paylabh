@@ -5,11 +5,13 @@ from rest_framework.request import Request
 from user.models import User
 from user.utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
 import uuid
-from .providus import create_naira_account
+# from .providus import create_naira_account
+from .coralpay import createNairaAccount
 from .models import Transaction,Wallet,Vault,Duration
 from .serializer import TransactionSerializer,WalletSerializer,DurationSerializer,VaultSerializer
 from rest_framework.permissions import IsAuthenticated
 from django.db.models.query_utils import Q
+from django.conf import settings
 from .utils import labtransfer
 from billPayment.bills import walletProcess
 # Create your views here.
@@ -133,7 +135,7 @@ class AccountView(APIView):
         if Wallet.objects.filter(user=user,currency_code__iexact=currency).exists():
             return errorResponse(id,"you cannot create double naira account")
         if currency == 'NGN':
-            status,account_number,account_name= create_naira_account(user)
+            status,account_name,account_number,bank_name= createNairaAccount(user)
             if status != "00":
                 return errorResponse(id,"unable to create naira account")
         else:
@@ -142,7 +144,8 @@ class AccountView(APIView):
             "user":user.id,
             "account_name":account_name,
             "account_number":account_number,
-            "currency_code":currency
+            "currency_code":currency,
+            "bank_name":bank_name
             
         }
         serializer_data=WalletSerializer(data=data)
@@ -214,11 +217,13 @@ class PaybackView(APIView):
         return successResponse(id,"all Duration","duration",date_range_with_increasing_percentage)
 
 
-
-
-
-
-            
-
+class BankListView(APIView):
+    permission_classes=[IsAuthenticated]
+    def get(self,request:Request):
+        data = request.data.get("data",None)
+        id = uuid.uuid4()
+        id = str(id)[:8]
+        bank = settings.BANK_LIST
+        return successResponse(id,"ALL BANK LIST","BANK",bank)
 
         

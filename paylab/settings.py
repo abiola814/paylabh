@@ -182,6 +182,39 @@ LOGGING = {
         },
     },
 }
+BANK_LIST={
+    "Sterling Bank": "000001",
+    "Keystone Bank": "000002",
+    "FCMB": "000003",
+    "United Bank for Africa": "000004",
+    "Diamond Bank": "000005",
+    "JAIZ Bank": "000006",
+    "Fidelity Bank": "000007",
+    "Polaris Bank": "000008",
+    "Citi Bank": "000009",
+    "Ecobank Bank": "000010",
+    "Unity Bank": "000011",
+    "StanbicIBTC Bank": "000012",
+    "GTBank Plc": "000013",
+    "Access Bank": "000014",
+    "Zenith Bank Plc": "000015",
+    "First Bank of Nigeria": "000016",
+    "Wema Bank": "000017",
+    "Union Bank": "000018",
+    "Enterprise Bank": "000019",
+    "Heritage": "000020",
+    "StandardChartered": "000021",
+    "Suntrust Bank": "000022",
+    "Providus Bank": "000023",
+    "Rand Merchant Bank": "000024",
+    "Titan Trust Bank": "000025",
+    "Taj Bank": "000026",
+    "Globus Bank": "000027",
+    "Central Bank of Nigeria": "000028",
+    "Lotus Bank": "000029",
+    "Premium Trust Bank": "000031",
+    "eNaira": "000033"
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
