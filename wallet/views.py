@@ -6,7 +6,7 @@ from user.models import User
 from user.utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
 import uuid
 # from .providus import create_naira_account
-from .coralpay import createNairaAccount
+from .coralpay import createNairaAccount,check_user_bank_details,bank_transfer
 from .models import Transaction,Wallet,Vault,Duration
 from .serializer import TransactionSerializer,WalletSerializer,DurationSerializer,VaultSerializer
 from rest_framework.permissions import IsAuthenticated
@@ -226,4 +226,38 @@ class BankListView(APIView):
         bank = settings.BANK_LIST
         return successResponse(id,"ALL BANK LIST","BANK",bank)
 
-        
+
+class CheckUserBankDetails(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        data = request.data.get("data",None)
+        id = uuid.uuid4()
+        id = str(id)[:8]
+        if checkRequest(id,data):
+            return checkRequest(id,data)
+        number = data.get("number")
+        bankCode = data.get("bankCode")
+
+        if number and bankCode:
+            result = check_user_bank_details(number, bankCode)
+            return errorResponse(id,"both account number and code is required")
+        else:
+            return successResponse(id,"bank details","BANK",result)
+
+
+class BankTransfer(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        data = request.data.get("data",None)
+        id = uuid.uuid4()
+        id = str(id)[:8]
+        if checkRequest(id,data):
+            return checkRequest(id,data)
+
+        if all(key in data for key in ["accountNumber", "accountName", "bankCode", "narration", "amount"]):
+            result = self.bank_transfer(data)
+            return  successResponse(id,"amount transferred")
+        else:
+            return errorResponse(id,'Missing required parameters')

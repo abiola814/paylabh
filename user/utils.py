@@ -118,7 +118,7 @@ def send_activation_mail(id,mail):
     'code':code
     }
 
-    email = render_to_string(email_template_name, c)
+    email_content = render_to_string(email_template_name, c)
     try:
 
         if EmailVerifyTable.objects.filter(email=mail).exists():
@@ -127,7 +127,7 @@ def send_activation_mail(id,mail):
             store_otp.save()
         else:
             EmailVerifyTable(email=mail,code=code).save()
-        send_mail(subject, email, 'supports@paylab.finance' , [mail], fail_silently=False)
+        send_mail(subject,"", 'supports@paylab.finance' , [mail], html_message=email_content, fail_silently=False)
         return successResponse(id,f"check your {mail} to activate it",None,None)
     except Exception as e:
 
@@ -158,7 +158,7 @@ def send_password_reset_mail(id,associated_users):
             }
             email = render_to_string(email_template_name, c)
             try:
-                send_mail(subject, email, 'supports@paylab.finance' , [user.email], fail_silently=False)
+                send_mail(subject, "",'supports@paylab.finance' , [user.email], html_message=email,fail_silently=False)
                 
                 response ={ 'requestTime':datetime.now(),'referenceId':id,
                         "requestType":"outbound",

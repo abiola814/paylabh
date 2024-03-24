@@ -2,6 +2,7 @@ import requests
 import random
 import string
 import hashlib
+import time
 import base64
 import json
 from django.http import JsonResponse
@@ -20,6 +21,43 @@ def generate_basic_auth(username, password):
 def generate_random_alphanumeric(length):
     alphanumeric_characters = string.ascii_uppercase + string.digits
     return ''.join(random.choice(alphanumeric_characters) for _ in range(length))
+
+
+def coral_login_token():
+
+
+    # Define the API endpoint
+    url = "https://testdev.coralpay.com:5000/FastChannel/api/Authentication"
+
+    # Define the request headers
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    # Define the request payload
+    payload = {
+        "username": "paylab",
+        "password": "#x*3152~.$0"
+    }
+
+    # Make the POST request
+    response = requests.post(url, headers=headers, json=payload)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the response JSON
+        response_data = response.json()
+        
+        # Extract the token and key from the response
+        token = response_data["token"]
+        key = response_data["key"]
+        return response_data
+        
+
+    else:
+        print("Authentication failed. Response code:", response.status_code)
+        return None
+
 
 def createNairaAccount(user):
     referenceNumber = generate_random_alphanumeric(16)
@@ -114,3 +152,94 @@ def coralpay_webhook(request):
         return JsonResponse({'success': 'Transaction created successfully'})
 
     return JsonResponse({'error': 'Unsupported method'}, status=405)
+
+
+
+def check_user_bank_details(number,bankCode):
+
+    # Define the API endpoint
+    url = "https://testdev.coralpay.com:5000/FastChannel/api/NameEnquiry"
+
+    response_login = coral_login_token()
+
+    # Define the request headers
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": response_login["token"]  # Replace <your_token_here> with your actual token
+    }
+
+    # Define the request payload
+    payload = {
+        "traceId": generate_random_alphanumeric(16),
+        "timeStamp": int(time.time()),
+        "enquiryDetails": {
+            "bankCode": bankCode,
+            "accountNumber": number
+        }
+    }
+
+    # Generate the signature
+    signature_str = f"MerchantId{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
+    signature = hashlib.sha512(signature_str.encode()).hexdigest()
+    payload["signature"] = signature
+
+    # Make the POST request
+    response = requests.post(url, headers=headers, json=payload)
+
+    # Print the response
+    print("Response Code:", response.status_code)
+    print("Response Body:", response.json())
+    response_data = response.json()
+    status_code =response_data["responseHeader"]["responseCode"]
+    if status_code == "00":
+        return response_data
+    else:
+        return JsonResponse({'error': 'Unsupported method'}, status=405)
+        
+
+def bank_transfer(data):
+
+    # Define the API endpoint
+    url = "https://testdev.coralpay.com:5000/FastChannel/api/SinglePost"
+
+    response_login = coral_login_token()
+    
+
+    # Define the request headers
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": response_login["token"]  # Replace <your_token_here> with your actual token
+    }
+
+    # Define the request payload
+    payload = {
+        "traceId": generate_random_alphanumeric(16),
+        "timeStamp": int(time.time()),
+        "transactionDetails": {
+            "creditAccount": data["accountNumber"],
+            "creditAccountName": data["accountName"],
+            "creditBankCode":data["bankCode"] ,
+            "narration":data["narration"],
+            "amount": data["amount"]
+        }
+    }
+
+    # Generate the signature
+    signature_str = f"MerchantId{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
+    signature = hashlib.sha512(signature_str.encode()).hexdigest()
+    payload["signature"] = signature
+
+    # Make the POST request
+    response = requests.post(url, headers=headers, json=payload)
+
+    # Print the response
+    print("Response Code:", response.status_code)
+    print("Response Body:", response.json())
+    response_data = response.json()
+    status_code =response_data["responseHeader"]["responseCode"]
+    if status_code == "00":
+        return response_data
+    else:
+        return JsonResponse({'message': 'unable to transfer'}, status=403)
+
+

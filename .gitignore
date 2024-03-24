@@ -2,3 +2,6 @@ venv
 .env
 db.sqlite3
 partytime.log
+user/migrations/*
+billPayment/migrations/*
+wallet/migrations/*
