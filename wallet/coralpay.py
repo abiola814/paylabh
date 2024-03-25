@@ -180,7 +180,7 @@ def check_user_bank_details(number,bankCode):
     }
 
     # Generate the signature
-    signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
+    signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login['key']}"  
     signature = hashlib.sha512(signature_str.encode()).hexdigest()
     payload["signature"] = signature
     payload = json.dumps(payload)
@@ -228,7 +228,7 @@ def bank_transfer(data):
     }
 
     # Generate the signature
-    signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
+    signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login['key']}"  
     signature = hashlib.sha512(signature_str.encode()).hexdigest()
     payload["signature"] = signature
 
