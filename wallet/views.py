@@ -241,9 +241,12 @@ class CheckUserBankDetails(APIView):
 
         if number and bankCode:
             result = check_user_bank_details(number, bankCode)
-            return errorResponse(id,"both account number and code is required")
-        else:
+            if not result:
+                return errorResponse(id,"unable to verify bank details")
             return successResponse(id,"bank details","BANK",result)
+            
+        else:
+            return errorResponse(id,"both account number and code is required")
 
 
 class BankTransfer(APIView):

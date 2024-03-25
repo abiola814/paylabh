@@ -21,10 +21,10 @@ urlpatterns = [
     path('transactionpin/',TransactionPinView.as_view()),
     path("profileimage/",ProfileImage.as_view()),
     path("profile/",Profile.as_view()),
-path("changepassword/",Changepassword.as_view()),
-        path("country/",CountryView.as_view()),
-            path("reason/",JoinreasonView.as_view()),
-        path('referral-link/', ReferralLinkView.as_view(), name='referral_link'),
+    path("changepassword/",Changepassword.as_view()),
+    path("country/",CountryView.as_view()),
+    path("reason/",JoinreasonView.as_view()),
+    path('referral-link/', ReferralLinkView.as_view(), name='referral_link'),
 
 
 

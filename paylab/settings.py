@@ -182,39 +182,166 @@ LOGGING = {
         },
     },
 }
-BANK_LIST={
-    "Sterling Bank": "000001",
-    "Keystone Bank": "000002",
-    "FCMB": "000003",
-    "United Bank for Africa": "000004",
-    "Diamond Bank": "000005",
-    "JAIZ Bank": "000006",
-    "Fidelity Bank": "000007",
-    "Polaris Bank": "000008",
-    "Citi Bank": "000009",
-    "Ecobank Bank": "000010",
-    "Unity Bank": "000011",
-    "StanbicIBTC Bank": "000012",
-    "GTBank Plc": "000013",
-    "Access Bank": "000014",
-    "Zenith Bank Plc": "000015",
-    "First Bank of Nigeria": "000016",
-    "Wema Bank": "000017",
-    "Union Bank": "000018",
-    "Enterprise Bank": "000019",
-    "Heritage": "000020",
-    "StandardChartered": "000021",
-    "Suntrust Bank": "000022",
-    "Providus Bank": "000023",
-    "Rand Merchant Bank": "000024",
-    "Titan Trust Bank": "000025",
-    "Taj Bank": "000026",
-    "Globus Bank": "000027",
-    "Central Bank of Nigeria": "000028",
-    "Lotus Bank": "000029",
-    "Premium Trust Bank": "000031",
-    "eNaira": "000033"
-}
+image_url = "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F82%2Fc6%2F5b%2F82c65b9bb0a75026fc4c82a438b4cc9b.jpg&tbnid=uuFWcTg4EEDF6M&vet=12ahUKEwj30ZvTq5CFAxX-UqQEHTqTBT4QMygGegQIARB9..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fcreative-logo-designs--759560293395419580%2F&docid=UbhDGLPiGJG40M&w=1079&h=1028&q=logo&ved=2ahUKEwj30ZvTq5CFAxX-UqQEHTqTBT4QMygGegQIARB9"
+
+BANK_LIST = [
+    {
+        "name": "Sterling Bank",
+        "id": "000001",
+        "image": image_url
+    },
+    {
+        "name": "Keystone Bank",
+        "id": "000002",
+        "image": image_url
+    },
+    {
+        "name": "FCMB",
+        "id": "000003",
+        "image": image_url
+    },
+    {
+        "name": "United Bank for Africa",
+        "id": "000004",
+        "image": image_url
+    },
+    {
+        "name": "Diamond Bank",
+        "id": "000005",
+        "image": image_url
+    },
+    {
+        "name": "JAIZ Bank",
+        "id": "000006",
+        "image": image_url
+    },
+    {
+        "name": "Fidelity Bank",
+        "id": "000007",
+        "image": image_url
+    },
+    {
+        "name": "Polaris Bank",
+        "id": "000008",
+        "image": image_url
+    },
+    {
+        "name": "Citi Bank",
+        "id": "000009",
+        "image": image_url
+    },
+    {
+        "name": "Ecobank Bank",
+        "id": "000010",
+        "image": image_url
+    },
+    {
+        "name": "Unity Bank",
+        "id": "000011",
+        "image": image_url
+    },
+    {
+        "name": "StanbicIBTC Bank",
+        "id": "000012",
+        "image": image_url
+    },
+    {
+        "name": "GTBank Plc",
+        "id": "000013",
+        "image": image_url
+    },
+    {
+        "name": "Access Bank",
+        "id": "000014",
+        "image": image_url
+    },
+    {
+        "name": "Zenith Bank Plc",
+        "id": "000015",
+        "image": image_url
+    },
+    {
+        "name": "First Bank of Nigeria",
+        "id": "000016",
+        "image": image_url
+    },
+    {
+        "name": "Wema Bank",
+        "id": "000017",
+        "image": image_url
+    },
+    {
+        "name": "Union Bank",
+        "id": "000018",
+        "image": image_url
+    },
+    {
+        "name": "Enterprise Bank",
+        "id": "000019",
+        "image": image_url
+    },
+    {
+        "name": "Heritage",
+        "id": "000020",
+        "image": image_url
+    },
+    {
+        "name": "StandardChartered",
+        "id": "000021",
+        "image": image_url
+    },
+    {
+        "name": "Suntrust Bank",
+        "id": "000022",
+        "image": image_url
+    },
+    {
+        "name": "Providus Bank",
+        "id": "000023",
+        "image": image_url
+    },
+    {
+        "name": "Rand Merchant Bank",
+        "id": "000024",
+        "image": image_url
+    },
+    {
+        "name": "Titan Trust Bank",
+        "id": "000025",
+        "image": image_url
+    },
+    {
+        "name": "Taj Bank",
+        "id": "000026",
+        "image": image_url
+    },
+    {
+        "name": "Globus Bank",
+        "id": "000027",
+        "image": image_url
+    },
+    {
+        "name": "Central Bank of Nigeria",
+        "id": "000028",
+        "image": image_url
+    },
+    {
+        "name": "Lotus Bank",
+        "id": "000029",
+        "image": image_url
+    },
+    {
+        "name": "Premium Trust Bank",
+        "id": "000031",
+        "image": image_url
+    },
+    {
+        "name": "eNaira",
+        "id": "000033",
+        "image": image_url
+    }
+]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

@@ -161,16 +161,16 @@ def check_user_bank_details(number,bankCode):
     url = "https://testdev.coralpay.com:5000/FastChannel/api/NameEnquiry"
 
     response_login = coral_login_token()
-
+    print(response_login["token"])
     # Define the request headers
     headers = {
         "Content-Type": "application/json",
-        "Authorization": response_login["token"]  # Replace <your_token_here> with your actual token
+        "Authorization": f"Bearer {response_login["token"]}"  # Replace <your_token_here> with your actual token
     }
 
     # Define the request payload
     payload = {
-        "traceId": generate_random_alphanumeric(16),
+        "traceId": str(generate_random_alphanumeric(16)),
         "timeStamp": int(time.time()),
         "enquiryDetails": {
             "bankCode": bankCode,
@@ -179,12 +179,13 @@ def check_user_bank_details(number,bankCode):
     }
 
     # Generate the signature
-    signature_str = f"MerchantId{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
+    signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
     signature = hashlib.sha512(signature_str.encode()).hexdigest()
     payload["signature"] = signature
-
+    payload = json.dumps(payload)
+    print(payload)
     # Make the POST request
-    response = requests.post(url, headers=headers, json=payload)
+    response = requests.request("POST", url, headers=headers, data=payload)
 
     # Print the response
     print("Response Code:", response.status_code)
@@ -192,9 +193,10 @@ def check_user_bank_details(number,bankCode):
     response_data = response.json()
     status_code =response_data["responseHeader"]["responseCode"]
     if status_code == "00":
+        print("skdkkdkdkkdkdkdkkd")
         return response_data
     else:
-        return JsonResponse({'error': 'Unsupported method'}, status=405)
+        return None
         
 
 def bank_transfer(data):
@@ -225,7 +227,7 @@ def bank_transfer(data):
     }
 
     # Generate the signature
-    signature_str = f"MerchantId{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
+    signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login["key"]}"  # Replace <your_secret_key_here> with your actual secret key
     signature = hashlib.sha512(signature_str.encode()).hexdigest()
     payload["signature"] = signature
 
