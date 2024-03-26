@@ -163,7 +163,7 @@ def send_password_reset_mail(id,associated_users):
             }
             email = render_to_string(email_template_name, c)
             try:
-                send=EmailMessage(subject,email,'supports@paylab.finance' , [user.email],fail_silently=False)
+                send=EmailMessage(subject,email,'supports@paylab.finance' , [user.email])
                 send.content_subtype="html"
                 send.send()
                 response ={ 'requestTime':datetime.now(),'referenceId':id,
