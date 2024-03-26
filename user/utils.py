@@ -130,7 +130,7 @@ def send_activation_mail(id,mail):
             store_otp.save()
         else:
             EmailVerifyTable(email=mail,code=code).save()
-        send=EmailMessage(subject,email_content,'supports@paylab.finance' , [mail],fail_silently=False)
+        send=EmailMessage(subject,email_content,'supports@paylab.finance' , [mail])
         send.content_subtype="html"
         send.send()        
         return successResponse(id,f"check your {mail} to activate it",None,None)
