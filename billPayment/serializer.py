@@ -15,7 +15,7 @@ class DataBundleSerializer(serializers.ModelSerializer):
 class NetworkSerializer(serializers.ModelSerializer):
     class Meta(object):
         model=NetworkType
-        fields = ("id","network","unique_id")
+        fields = ("id","network","unique_id","image_url")
 
         
 class CableSerializer(serializers.ModelSerializer):

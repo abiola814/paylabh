@@ -7,6 +7,9 @@ from user.models import User
 class NetworkType(models.Model):
     network = models.CharField(max_length=20)
     unique_id = models.CharField(max_length=6)
+    image_url = models.TextField()
+
+
 
     def __str__(self):
         return f"{self.network} with id {self.unique_id} "
