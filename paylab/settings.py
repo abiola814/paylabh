@@ -339,6 +339,11 @@ BANK_LIST = [
         "name": "eNaira",
         "id": "000033",
         "image": image_url
+    },
+    {
+        "name":"test bank",
+        "id":"999998",
+        "image":image_url
     }
 ]
 
