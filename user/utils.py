@@ -102,7 +102,7 @@ def send_welcome_mail(user):
 
     email = render_to_string(email_template_name, c)
     try:
-        send=EmailMessage(subject,email,'supports@paylab.finance' , [user.email],fail_silently=False)
+        send=EmailMessage(subject,email,'supports@paylab.finance' , [user.email])
         send.content_subtype="html"
         send.send()
     except Exception as e:
