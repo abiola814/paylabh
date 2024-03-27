@@ -177,7 +177,7 @@ class LabTransferView(APIView):
         balance = walletProcess(user=request.user)
         if currency == "NGN":
             trans = Transaction.objects.create(user=request.user,name=f"{request.user.last_name} {request.user.first_name}",
-                transaction_type="Debit",transaction_id= (uuid.uuid4())[:12],reference_id= (uuid.uuid4())[:12],status="Pending",
+                transaction_type="Debit",transaction_id= (str(uuid.uuid4()))[:12],reference_id= (uuid.uuid4())[:12],status="Pending",
                 description=f"transfer to  {tagname}",remainbalance=balance,amount=amount)
             info,status=labtransfer(request,amount,tagname,id)
             if status == "failed":
