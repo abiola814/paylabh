@@ -14,8 +14,8 @@ def labtransfer(request,amount,labName,id):
     user= User.objects.get(tag__iexact=taguser)
     if walletProcess(amount=amount,user=user,type=3,id=id):
         balance = walletProcess(amount=amount,user=user)
-        trans = Transaction,object.create(user=user,name=f"{user.last_name} {user.first_name}",
-    transaction_type="Credit",transaction_id= (uuid.uuid4())[:12],reference_id= (uuid.uuid4())[:12],status="success",
+        trans = Transaction.objects.create(user=user,name=f"{user.last_name} {user.first_name}",
+    transaction_type="Credit",transaction_id= (str(uuid.uuid4()))[:12],reference_id= (str(uuid.uuid4()))[:12],status="Success",
     description=f"transfer from  {request.user.last_name}",remainbalance=balance,amount=amount)
         return "money sent","success"
     else:
