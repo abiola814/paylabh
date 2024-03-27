@@ -27,7 +27,7 @@ class Transaction(models.Model):
         (Pending_status, "Pending"),
         (Success_status, "Success"),
     ]
-    
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
     transaction_type = models.CharField(max_length=20)
@@ -36,7 +36,7 @@ class Transaction(models.Model):
     description = models.CharField(max_length=20,blank=True,null=True)
     currency_code = models.CharField(max_length=3)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    remainbalance = models.DecimalField(max_digits=10, decimal_places=2)
+    remainbalance = models.DecimalField(max_digits=10, decimal_places=2,null=True,blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     reference = models.JSONField(null=True,blank=True)
     sourceAccountNumber= models.CharField(max_length=20,null=True,blank=True)
@@ -47,7 +47,7 @@ class Transaction(models.Model):
 
 
     def __str__(self):
-        return f"{self.transaction_type} transaction for {self.user.username}"
+        return f"{self.transaction_type} transaction for {self.user.first_name}"
 
 
 class NameofSaving(models.Model):
