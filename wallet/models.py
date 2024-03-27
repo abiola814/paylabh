@@ -18,6 +18,16 @@ class Wallet(models.Model):
         return f"{self.user.get_full_name}'s {self.currency_code} wallet"
 
 class Transaction(models.Model):
+    Success_status = 'Success'
+    Failed_status = 'Failed'
+    Pending_status = 'Pending'
+
+    STATUSES = [
+        (Failed_status, 'Failed'),
+        (Pending_status, "Pending"),
+        (Success_status, "Success"),
+    ]
+    
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
     transaction_type = models.CharField(max_length=20)
@@ -33,6 +43,8 @@ class Transaction(models.Model):
     sourceAccountName = models.CharField(max_length=20,null=True,blank=True)
     sourceBankName = models.CharField(max_length=20,null=True,blank=True)
     settlementId = models.CharField(max_length=20,null=True,blank=True)
+    status = models.CharField(max_length=255, choices=STATUSES, default=Pending_status)
+
 
     def __str__(self):
         return f"{self.transaction_type} transaction for {self.user.username}"
