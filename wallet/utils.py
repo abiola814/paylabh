@@ -10,8 +10,8 @@ def labtransfer(request,amount,labName,id):
     if not walletProcess(amount=amount,user=request.user,type=2,id=id):
         return "unable to debit wallet","failed"
 
-    taguser= labName.replace('LabTag')
-    user= User.objects.get(tag=taguser)
+    taguser= labName.replace('@LabTag',"")
+    user= User.objects.get(tag__iexact=taguser)
     if walletProcess(amount=amount,user=user,type=3,id=id):
         balance = walletProcess(amount=amount,user=user)
         trans = Transaction,object.create(user=user,name=f"{user.last_name} {user.first_name}",
