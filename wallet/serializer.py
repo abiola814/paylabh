@@ -18,22 +18,22 @@ class VaultaSerializer(serializers.ModelSerializer):
     class Meta(object):
         model= Vault
         fields = '__all__'
-    def validate(self, data):
-        amount = data.get('amount')
-        currency_code = data.get('currency_code')
-        user = self.context['request'].user
+    # def validate(self, data):
+    #     amount = data.get('amount')
+    #     currency_code = data.get('currency_code')
+    #     user = self.context['request'].user
 
-        # Retrieve the user's wallet based on the currency_code and user information
-        try:
-            user_wallet = Wallet.objects.get(user=user, currency_code=currency_code)
-        except Wallet.DoesNotExist:
-            raise serializers.ValidationError("Wallet not found for the specified currency code.")
+    #     # Retrieve the user's wallet based on the currency_code and user information
+    #     try:
+    #         user_wallet = Wallet.objects.get(user=user, currency_code=currency_code)
+    #     except Wallet.DoesNotExist:
+    #         raise serializers.ValidationError("Wallet not found for the specified currency code.")
 
-        # Check if the wallet's balance is sufficient
-        if user_wallet.balance < amount:
-            raise serializers.ValidationError("Insufficient funds in the wallet.")
+    #     # Check if the wallet's balance is sufficient
+    #     if user_wallet.balance < amount:
+    #         raise serializers.ValidationError("Insufficient funds in the wallet.")
 
-        return data
+    #     return data
 
     def update(self, instance, validated_data):
         user = self.context['request'].user
