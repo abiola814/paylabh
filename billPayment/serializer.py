@@ -8,9 +8,14 @@ from .models import NetworkType,DataBundle,Cable,Bills,Exam
 
 
 class DataBundleSerializer(serializers.ModelSerializer):
+    image= serializers.SerializerMethodField()
+
+    def get_image(self,obj):
+        return obj.networkType.image_url
+
     class Meta(object):
         model=DataBundle
-        fields = ("id","networkType","dataplan","day","size","amount","unique_id")
+        fields = ("id","networkType","dataplan","day","size","amount","unique_id","image")
         
 class NetworkSerializer(serializers.ModelSerializer):
     class Meta(object):
