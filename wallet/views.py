@@ -296,6 +296,6 @@ class BankTransfer(APIView):
 
         if all(key in data for key in ["accountNumber", "accountName", "bankCode", "narration", "amount"]):
             result = bank_transfer(data)
-            return  successResponse(id,"amount transferred")
+            return  successResponse(id,"amount transferred","data",result)
         else:
             return errorResponse(id,'Missing required parameters')

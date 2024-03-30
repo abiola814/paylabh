@@ -227,13 +227,15 @@ def bank_transfer(data):
         }
     }
 
+
     # Generate the signature
     signature_str = f"1057PYL10000001{payload['traceId']}{payload['timeStamp']}{response_login['key']}"  
     signature = hashlib.sha512(signature_str.encode()).hexdigest()
     payload["signature"] = signature
-
+    payload = json.dumps(payload)
+    print(payload)
     # Make the POST request
-    response = requests.post(url, headers=headers, json=payload)
+    response = requests.request("POST", url, headers=headers, data=payload)
 
     # Print the response
     print("Response Code:", response.status_code)
