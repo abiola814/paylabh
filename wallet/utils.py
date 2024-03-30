@@ -32,7 +32,8 @@ def labtransfer(request,amount,labName,id,ref_id,trans_id,charge):
             "transId":trans_id,
             "time":datetime.now(),
             "charge":charge,
-            "sender":f"{request.user.first_name} {request.user.last_name}"
+            "sender":f"{request.user.first_name} {request.user.last_name}",
+            "email":user.email
         },"success"
     else:
         return "unable to credit other account contact the customer care","reverse"

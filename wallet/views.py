@@ -212,7 +212,7 @@ class LabTransferView(APIView):
                 trans.status="Success"
                 trans.save()
                 Thread(target=send_debit_mail, args=[request.user.email,info]).start()
-                Thread(target=send_credit_mail, args=[request.user.email,info]).start()
+                Thread(target=send_credit_mail, args=[info["email"],info]).start()
 
                 return successResponse(id,"money sent","data",info)
         return errorResponse(id,"Currency not supported coming soon")
