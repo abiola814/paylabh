@@ -82,7 +82,8 @@ def buy_airtime(request,network,number,amount,ref,id):
     try:
         response=requests.post(url, headers =headers, data=json.dumps(data))
     except:
-        return "try again"
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
+        return "try again","failed"
     print(response.json())
     # checking the status code
     if response.status_code == 200:
@@ -94,6 +95,7 @@ def buy_airtime(request,network,number,amount,ref,id):
             "transction_id":response_data["request-id"],
             "status":"Success",
             "currency_code":"NGN",
+            "is_Bills":True,
             "amount":amount,
             "reference_id": ref,
             "remainbalance": walletProcess(user=request.user,type=4),
@@ -101,12 +103,13 @@ def buy_airtime(request,network,number,amount,ref,id):
 
         }
         serializer_data=TransactionSerializer(data=trans, context={"request": request})
-        if serializer_data.is_valid():
+        if serializer_data.is_valid() :
             serializer_data.save()
             return f"{number} credited with {amount}",response_data["status"]
         else:
             return serializer_data.errors,"failed"
     elif response.status_code ==400:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         response_data = response.json()
         return response_data['msg'],"failed"
         
@@ -136,6 +139,7 @@ def buy_data(network,dataplan,number,amount,ref,request,id):
     try:
         response=requests.post(url, headers =headers, data=json.dumps(data))
     except:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         return "try again","failed"
     print(response.json())
     # checking the status code
@@ -148,6 +152,7 @@ def buy_data(network,dataplan,number,amount,ref,request,id):
             "transction_id":response_data["request-id"],
             "status":"Success",
             "currency_code":"NGN",
+            "is_Bills":True,
             "amount":amount,
             "reference_id": ref,
             "remainbalance": walletProcess(user=request.user,type=4),
@@ -161,6 +166,7 @@ def buy_data(network,dataplan,number,amount,ref,request,id):
         else:
             return serializer_data.errors,"failed"
     elif response.status_code ==400:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         response_data = response.json()
         return response_data['msg'],"failed"
 
@@ -246,6 +252,7 @@ def buy_bills(request,disco,meter_type,meter_number,amount,ref,id):
     try:
         response=requests.post(url, headers =headers, data=json.dumps(data))
     except:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         return "try again","failed"
     print(response.json())
     # checking the status code
@@ -258,6 +265,7 @@ def buy_bills(request,disco,meter_type,meter_number,amount,ref,id):
             "transction_id":response_data["request-id"],
             "status":"Success",
             "currency_code":"NGN",
+            "is_Bills":True,
             "amount":amount,
             "reference_id": ref,
             "remainbalance": walletProcess(user=request.user,type=4),
@@ -272,6 +280,7 @@ def buy_bills(request,disco,meter_type,meter_number,amount,ref,id):
         else:
             return serializer_data.errors,"failed"
     elif response.status_code ==400:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         response_data = response.json()
         return response_data['msg'],"failed"
 def buy_result(request,exam,quantity,amount,ref,id):
@@ -296,6 +305,7 @@ def buy_result(request,exam,quantity,amount,ref,id):
     try:
         response=requests.post(url, headers =headers, data=json.dumps(data))
     except:
+        
         return "try again","failed"
     print(response.json())
     # checking the status code
@@ -308,6 +318,7 @@ def buy_result(request,exam,quantity,amount,ref,id):
             "transction_id":ref,
             "status":"Success",
             "currency_code":"NGN",
+            "is_Bills":True,
             "amount":amount,
             "reference_id": ref,
             "remainbalance": walletProcess(user=request.user,type=4),
@@ -322,6 +333,7 @@ def buy_result(request,exam,quantity,amount,ref,id):
         else:
             return serializer_data.errors,"failed"
     elif response.status_code ==400:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         response_data = response.json()
         return response_data['msg'],"failed"
 
@@ -403,6 +415,7 @@ def buy_coralpay(request,customer_number,paymentRef,slug,amount,id):
     try:
         response=requests.post(url, headers =headers, data=json.dumps(data))
     except:
+        walletProcess(amount=amount,user=request.user,type=3,id=id)
         return "try again","failed"
     print(response.json())
     response_data = response.json()
@@ -416,6 +429,7 @@ def buy_coralpay(request,customer_number,paymentRef,slug,amount,id):
             "transction_id":paymentRef,
             "status":"Success",
             "currency_code":"NGN",
+            "is_Bills":True,
             "amount":amount,
             "reference_id": paymentRef,
             "remainbalance": walletProcess(user=request.user,type=4),
@@ -428,6 +442,7 @@ def buy_coralpay(request,customer_number,paymentRef,slug,amount,id):
             serializer_data.save()
             return response_data["responseData"]["customerMessage"],"success"
         else:
+            walletProcess(amount=amount,user=request.user,type=3,id=id)
             return serializer_data.errors,"failed"
         
     else:
