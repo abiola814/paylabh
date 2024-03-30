@@ -56,6 +56,8 @@ class Exam(models.Model):
     amount = models.CharField(max_length=10)
     name = models.CharField(max_length=60)
     unique_id = models.CharField(max_length=6)
+    image_url = models.TextField()
+
 
 
 

@@ -2,6 +2,7 @@ from rest_framework.views import APIView
 from rest_framework import generics,status
 from rest_framework.response import Response
 from rest_framework.request import Request
+from threading import Thread
 from user.models import User
 from user.utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
 import uuid
@@ -12,8 +13,9 @@ from .serializer import TransactionSerializer,WalletSerializer,DurationSerialize
 from rest_framework.permissions import IsAuthenticated
 from django.db.models.query_utils import Q
 from django.conf import settings
-from .utils import labtransfer
+from .utils import labtransfer,calculate_charge_fee,send_debit_mail,send_credit_mail
 from billPayment.bills import walletProcess
+from datetime import datetime
 # Create your views here.
 class TransactionsView(APIView):
 
@@ -156,8 +158,24 @@ class AccountView(APIView):
           
         return successResponse(id,"account created","account",serializer_data.data)
     
+class TransferReview(APIView):
+    permission_classes=[IsAuthenticated] 
+    def post(self,request:Request):
+        data = request.data.get("data",None)
+        id = uuid.uuid4()
+        id = str(id)[:8]
+        if checkRequest(id,data):
+            return checkRequest(id,data)
+        amount = data.get("amount")
+        balance = walletProcess(user=request.user,type=1,amount=amount,id=id)
+        if not balance:
+            return errorResponse(id,"insufficient balance")
+        charge = calculate_charge_fee("LabTransferFee",int(amount))
+        return successResponse(id,"charge calculated","chargeFee",charge)
+        
 
-class LabTransferView(APIView):
+
+class LabTransferView(APIView):  
 
     permission_classes=[IsAuthenticated]
     def post(self,request:Request):
@@ -171,21 +189,34 @@ class LabTransferView(APIView):
         amount = data.get("amount")
         tagname = data.get("labtag")
         pin = data.get("pin",None)
+        trans_id=  (str(uuid.uuid4()))[:12]
+        ref_id =  (str(uuid.uuid4()))[:12]
         if not pin == request.user.transaction_pin:
             return errorResponse(id,"Transaction pin not correct")
-
-        balance = walletProcess(user=request.user)
+        charge = calculate_charge_fee("LabTransferFee",int(amount))
+        balance = walletProcess(user=request.user,type=4,id=id)
         if currency == "NGN":
+            total_remove_amount = int(amount) + charge["chargeFee"]
             trans = Transaction.objects.create(user=request.user,name=f"{request.user.last_name} {request.user.first_name}",
-                transaction_type="Debit",transaction_id= (str(uuid.uuid4()))[:12],reference_id= (str(uuid.uuid4()))[:12],status="Pending",
-                description=f"transfer to  {tagname}",remainbalance=balance,amount=amount)
-            info,status=labtransfer(request,amount,tagname,id)
+                transaction_type="Debit",transaction_id= trans_id,reference_id= ref_id,status="Pending",
+                description=f"transfer to  {tagname}",remainbalance=balance,amount=total_remove_amount,is_LabTransfer=True)
+            info,status=labtransfer(request,amount,tagname,id,ref_id,trans_id,charge["chargeFee"])
             if status == "failed":
                 return errorResponse(id,info)
-            else:
-                trans.status="success"
+            elif status =="reverse":
+                trans.status="Reverse"
                 trans.save()
-                return successResponse(id,info)
+                walletProcess(user=request.user,type=3,amount=total_remove_amount,id=id)
+                return errorResponse(id,info)
+            else:
+                trans.status="Success"
+                trans.save()
+                Thread(target=send_debit_mail, args=[request.user.email,info]).start()
+                Thread(target=send_credit_mail, args=[request.user.email,info]).start()
+
+                return successResponse(id,"money sent","data",info)
+        return errorResponse(id,"Currency not supported coming soon")
+        
             
 
 class DurationView(APIView):
@@ -264,7 +295,7 @@ class BankTransfer(APIView):
             return checkRequest(id,data)
 
         if all(key in data for key in ["accountNumber", "accountName", "bankCode", "narration", "amount"]):
-            result = self.bank_transfer(data)
+            result = bank_transfer(data)
             return  successResponse(id,"amount transferred")
         else:
             return errorResponse(id,'Missing required parameters')

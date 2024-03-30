@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Welcome to Paylab!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: aliceblue;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: white;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      @media only screen and (max-width: 600px) {
+        .button {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <table style="width: 100%; border-collapse: collapse">
+        <tr>
+          <td colspan="2" style="padding: 20px">
+            <img
+              src="https://res.cloudinary.com/wallnet/image/upload/v1710600960/templa_fzyrak.png"
+              alt="header-img"
+              style="max-width: 600px; display: block; margin: 0 auto"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding: 20px">
+            <h1 style="margin-top: 20px; text-align: center">
+              You’ve made a transaction
+            </h1>
+            <p>Dear {{sender}},</p>
+            <p>
+              We're delighted to inform you that your recent transaction on
+              Paylab was successful!
+            </p>
+            <p>Transaction Details:</p>
+            <p><strong>Amount</strong>: {{amount}}</p>
+            <p><strong>Date and Time</strong>: {{time}}</p>
+            <p><strong>Transaction ID</strong>: {{transId}}</p>
+            <p>
+              Your account has been updated, and you can review the transaction
+              details within the app.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding: 20px; border-top: 1px solid #e0e0e0">
+            <div>
+              <p>
+                Feel free to reach out to our support team at support@paylab.com
+                if you have any questions or need assistance.
+              </p>
+              <p>Best regards,<br />Paylab Team</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding: 20px">
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <div
+                style="
+                  align-items: center;
+                  justify-content: center;
+                  display: flex;
+                "
+              >
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="margin-right: 20px"
+                  ><img
+                    src="https://res.cloudinary.com/wallnet/image/upload/v1710605435/fb_hrqv6p.png"
+                    alt=""
+                    style="height: 30px; width: 30px"
+                /></a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="margin-right: 20px"
+                  ><img
+                    src="https://res.cloudinary.com/wallnet/image/upload/v1710605434/ig_d93fyh.png"
+                    alt=""
+                    style="height: 30px; width: 30px"
+                /></a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="margin-right: 20px"
+                  ><img
+                    src="https://res.cloudinary.com/wallnet/image/upload/v1710605434/x_ozojjs.png"
+                    alt=""
+                    style="height: 30px; width: 30px"
+                /></a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="margin-right: 20px"
+                  ><img
+                    src="https://res.cloudinary.com/wallnet/image/upload/v1710605434/link_qydmf0.png"
+                    alt=""
+                    style="height: 30px; width: 30px"
+                /></a>
+              </div>
+              <p>Copright © 2024 | Paylab Ltd</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

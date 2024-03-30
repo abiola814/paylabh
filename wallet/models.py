@@ -21,11 +21,13 @@ class Transaction(models.Model):
     Success_status = 'Success'
     Failed_status = 'Failed'
     Pending_status = 'Pending'
+    Reverse_status = "Reverse"
 
     STATUSES = [
         (Failed_status, 'Failed'),
         (Pending_status, "Pending"),
         (Success_status, "Success"),
+        (Reverse_status,"Reverse")
     ]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -38,6 +40,9 @@ class Transaction(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     remainbalance = models.DecimalField(max_digits=10, decimal_places=2,null=True,blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
+    is_LabTransfer = models.BooleanField(default=False)
+    is_Bills = models.BooleanField(default=False)
+    is_Transfer = models.BooleanField(default=False)
     reference = models.JSONField(null=True,blank=True)
     sourceAccountNumber= models.CharField(max_length=20,null=True,blank=True)
     sourceAccountName = models.CharField(max_length=20,null=True,blank=True)
@@ -125,3 +130,13 @@ class Vault(models.Model):
     end_date = models.DateField(null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True,blank=True,null=True)
+
+
+# Chargefee model
+class Chargefee(models.Model):
+    ispercentage = models.BooleanField(default=True, help_text="Flag indicating if the charge is a percentage")
+    chargeTitle = models.CharField(max_length=50, help_text="Title of the charge")
+    value = models.FloatField(default=0, help_text="Value of the charge")
+
+    def __str__(self):
+        return str(self.chargeTitle)

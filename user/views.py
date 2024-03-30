@@ -12,7 +12,7 @@ from django.shortcuts import redirect
 from rest_framework.permissions import IsAuthenticated
 from random import randrange
 from django.db.models.query_utils import Q
-from .serializer import UserSerializer,UpdateProfileSerializer
+from .serializer import UserSerializer,UpdateProfileSerializer,TagSerializerIn
 from datetime import datetime
 from wallet.models import Transaction
 # Create your views here.
@@ -316,11 +316,29 @@ class TagView(APIView):
         return successResponse(id,"tag added")
 
     def get(self,request:Request):
+        search = request.GET.get("search",None)
+        id = uuid.uuid4()
+        id = str(id)[:8]
+        result={"tag":f"{request.user.tag}@LabTag"}
+        if search:
+            filters =User.objects.filter(tag__icontains=search)
+            result = TagSerializerIn(filters).data
+        
+        return successResponse(id,"tag","tag",result) 
+    def put(self,request:Request):
         data = request.data.get("data",None)
         id = uuid.uuid4()
         id = str(id)[:8]
-        
-        return successResponse(id,"tag","tag",{"tag":f"{request.user.tag}@LagTag"})
+        if checkRequest(id,data=data):
+            return checkRequest(id,data=data)
+        tag_name = data.get("tag_name")
+        user = User.objects.get(id= request.user.id)
+        if User.objects.filter(tag=tag_name).exists():
+            return errorResponse(id,"tag name already used")
+        user.tag=tag_name
+        user.save()
+        return successResponse(id,"tag updates")
+    
 
 class TransactionPinView(APIView):
 
