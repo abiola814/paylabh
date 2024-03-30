@@ -1,9 +1,6 @@
 from django.contrib import admin
 from django.urls import path,include
-from .views import (    ReferralLinkView, verifyMail,Profile,ProfileImage,Changepassword,ForgotPasswordView,
-                        CreatePasscodeView,TransactionPinView,EmailVerifycode,LoginView,PhoneVerifycode,
-                        activateMail,activatePhone,verifyPhone,SignupView,CountryView,JoinreasonView,TagView,PasscodeLoginView
-                    )
+from .views import *
 urlpatterns = [
 
     path('signup/', SignupView.as_view()),

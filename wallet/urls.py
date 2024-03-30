@@ -14,6 +14,7 @@ urlpatterns = [
     path('payback/', PaybackView.as_view()),
     path('checkbank/',  CheckUserBankDetails.as_view()),
     path('transfer/', BankTransfer.as_view()),
+    path("transferReview/",TransferReview.as_view()),
 
         path('bank-list/', BankListView.as_view()),
 
