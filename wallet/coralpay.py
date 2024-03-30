@@ -242,8 +242,9 @@ def bank_transfer(data):
     response_data = response.json()
     status_code =response_data["responseHeader"]["responseCode"]
     if status_code == "00":
+        print("skdkkdkdkkdkdkdkkd")
         return response_data
     else:
-        return JsonResponse({'message': 'unable to transfer'}, status=403)
+        return None
 
 
