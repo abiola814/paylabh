@@ -21,7 +21,7 @@ class TagSerializerIn(serializers.ModelSerializer):
 
     class Meta(object):
         model = User
-        fields = ('tag', 'first_name','last_name'
+        fields = ("tag", 'first_name',"last_name"
                   )
 
 class UpdateProfileSerializer(serializers.ModelSerializer):
