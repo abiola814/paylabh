@@ -44,12 +44,12 @@ class Transaction(models.Model):
     is_Bills = models.BooleanField(default=False)
     is_Transfer = models.BooleanField(default=False)
     reference = models.JSONField(null=True,blank=True)
-    sourceAccountNumber= models.CharField(max_length=20,null=True,blank=True)
-    sourceAccountName = models.CharField(max_length=20,null=True,blank=True)
-    sourceBankName = models.CharField(max_length=20,null=True,blank=True)
+    DestinationAccountNumber= models.CharField(max_length=20,null=True,blank=True)
+    DestinationAccountName = models.CharField(max_length=20,null=True,blank=True)
+    DestinationBankName = models.CharField(max_length=20,null=True,blank=True)
     settlementId = models.CharField(max_length=20,null=True,blank=True)
     status = models.CharField(max_length=255, choices=STATUSES, default=Pending_status)
-
+    response= models.JSONField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.transaction_type} transaction for {self.user.first_name}"

@@ -4,6 +4,8 @@ import string
 import hashlib
 import time
 import base64
+from billPayment.bills import walletProcess
+
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -200,7 +202,7 @@ def check_user_bank_details(number,bankCode):
         return None
         
 
-def bank_transfer(data):
+def bank_transfer(user,data,charge):
 
     # Define the API endpoint
     url = "https://testdev.coralpay.com:5000/FastChannel/api/SinglePost"
@@ -233,6 +235,10 @@ def bank_transfer(data):
     payload["signature"] = signature
     payload = json.dumps(payload)
     print(payload)
+
+    #debit user before process
+    if not walletProcess(amount=int(data["amount"]) + charge,user=user,type=2,id=id):
+        return "unable to debit wallet","failed"
     # Make the POST request
     response = requests.request("POST", url, headers=headers, data=payload)
 
@@ -243,8 +249,10 @@ def bank_transfer(data):
     status_code =response_data["responseHeader"]["responseCode"]
     if status_code == "00":
         print("skdkkdkdkkdkdkdkkd")
-        return response_data
+ 
+        return response_data,"Success"
+    
     else:
-        return response_data
+        return response_data["responseHeader"]["responseMessage"],"reverse"
 
 

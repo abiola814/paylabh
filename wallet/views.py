@@ -293,9 +293,33 @@ class BankTransfer(APIView):
         id = str(id)[:8]
         if checkRequest(id,data):
             return checkRequest(id,data)
-
+        pin = data.get("pin",None)
+        amount= data.get("amount",None)
+        trans_id=  (str(uuid.uuid4()))[:12]
+        ref_id =  (str(uuid.uuid4()))[:12]
+        if not pin == request.user.transaction_pin:
+            return errorResponse(id,"Transaction pin not correct")
+        charge = calculate_charge_fee("LabTransferFee",int(amount))
+        balance = walletProcess(user=request.user,type=4,id=id)
         if all(key in data for key in ["accountNumber", "accountName", "bankCode", "narration", "amount"]):
-            result = bank_transfer(data)
+            total_remove_amount = int(amount) + charge["chargeFee"]
+            trans = Transaction.objects.create(user=request.user,name=f"{request.user.last_name} {request.user.first_name}",
+            transaction_type="Debit",transaction_id= trans_id,reference_id= ref_id,status="Pending",
+            description=data.get("narration"),remainbalance=balance,amount=total_remove_amount,is_Transfer=True,DestinationAccountNumber=data.get("accountNumber"),DestinationAccountName=data.get("accountName"),DestinationBankName=data.get("bankCode"))
+            result,status = bank_transfer(data)
+            if status == "failed":
+                return errorResponse(id,result)
+            elif status =="reverse":
+                trans.status="Reverse"
+                trans.save()
+                walletProcess(user=request.user,type=3,amount=total_remove_amount,id=id)
+                return errorResponse(id,result)
+            else:
+                trans.status="Success"
+                trans.response=result
+                trans.reference_id=result["traceId"]
+                trans.save()
+                Thread(target=send_debit_mail, args=[request.user.email,{"sender":f"{request.user.first_name} {request.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount}]).start()
             return  successResponse(id,"amount transferred","data",result)
         else:
             return errorResponse(id,'Missing required parameters')
