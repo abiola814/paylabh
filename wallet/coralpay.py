@@ -237,7 +237,7 @@ def bank_transfer(user,data,charge):
     print(payload)
 
     #debit user before process
-    total = int(data["amount"]) + charge
+    total = int(payload["transactionDetails"]["amount"]) + charge
     if not walletProcess(amount=total,user=user,type=2,id=id):
         return "unable to debit wallet","failed"
     # Make the POST request
