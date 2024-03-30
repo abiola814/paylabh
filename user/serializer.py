@@ -11,7 +11,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = User
-        fields = ('id', 'first_name','last_name','first_login','verified',"is_bvn",'email','phone',"avatar","tag","country_origin",
+        fields = ('id', 'first_name','last_name','first_login','verified',"is_bvn",'email','phone',"avatar","tag","country_origin","join_reason"
                   )
 class TagSerializerIn(serializers.ModelSerializer):
     tag = serializers.SerializerMethodField()
