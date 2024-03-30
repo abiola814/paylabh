@@ -7,7 +7,7 @@ from random import randrange
 class TransactionSerializer(serializers.ModelSerializer):
     class Meta(object):
         model=Transaction
-        fields = ("id","user","name","transaction_type","transaction_id","reference_id","status","description","currency_code","amount","remainbalance","timestamp","sourceAccountNumber","sourceAccountName","sourceBankName","settlementId")
+        fields = ("id","user","name","transaction_type","transaction_id","reference_id","status","description","currency_code","amount","remainbalance","timestamp","DestinationAccountNumber","DestinationAccountName","DestinationBankName","settlementId","is_Transfer","is_Bills","is_LabTransfer")
 
 class WalletSerializer(serializers.ModelSerializer):
     class Meta(object):
