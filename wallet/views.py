@@ -319,7 +319,7 @@ class BankTransfer(APIView):
                 trans.response=result
                 trans.reference_id=result["traceId"]
                 trans.save()
-                Thread(target=send_debit_mail, args=[request.user.email,{"sender":f"{request.user.first_name} {request.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount}]).start()
+                Thread(target=send_debit_mail, args=[request.user.email,{"sender":f"{request.user.first_name} {request.user.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount}]).start()
             return  successResponse(id,"amount transferred","data",result)
         else:
             return errorResponse(id,'Missing required parameters')
