@@ -245,6 +245,6 @@ def bank_transfer(data):
         print("skdkkdkdkkdkdkdkkd")
         return response_data
     else:
-        return None
+        return response_data
 
 
