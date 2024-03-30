@@ -306,7 +306,7 @@ class BankTransfer(APIView):
             trans = Transaction.objects.create(user=request.user,name=f"{request.user.last_name} {request.user.first_name}",
             transaction_type="Debit",transaction_id= trans_id,reference_id= ref_id,status="Pending",
             description=data.get("narration"),remainbalance=balance,amount=total_remove_amount,is_Transfer=True,DestinationAccountNumber=data.get("accountNumber"),DestinationAccountName=data.get("accountName"),DestinationBankName=data.get("bankCode"))
-            result,status = bank_transfer(data)
+            result,status = bank_transfer(user=request.user,data=data,charge=charge)
             if status == "failed":
                 return errorResponse(id,result)
             elif status =="reverse":
