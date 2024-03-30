@@ -197,7 +197,7 @@ class ResultView(APIView):
             return errorResponse(id, "Transaction pin is required.")
 
         # Check if the provided transaction pin is correct
-        if not check_transaction_pin(user, transaction_pin):
+        if not check_transaction_pin(request.user, transaction_pin):
             return errorResponse(id, "Invalid transaction pin.")
         info,status=buy_result(request,data.get("exam"),data.get("quantity"),data.get("amount"),id,id)
         if status == "failed":
