@@ -33,7 +33,7 @@ class TransactionsView(APIView):
     def get(self,request:Request):
         id = uuid.uuid4()
         id = str(id)[:8]
-        trans = Transaction.objects.all(user=request.user).order_by('-timestamp')
+        trans = Transaction.objects.filter(user=request.user).order_by('-timestamp')
         serializer_data=TransactionSerializer(trans, context={"request": request},many=True)
           
         return successResponse(id,"all transactions","transaction",serializer_data.data)
