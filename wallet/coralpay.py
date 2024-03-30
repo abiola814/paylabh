@@ -207,11 +207,10 @@ def bank_transfer(data):
 
     response_login = coral_login_token()
     
-
-    # Define the request headers
+    token=response_login["token"]
     headers = {
         "Content-Type": "application/json",
-        "Authorization": response_login["token"]  # Replace <your_token_here> with your actual token
+        "Authorization": f"Bearer {token}"  # Replace <your_token_here> with your actual token
     }
 
     # Define the request payload
