@@ -105,7 +105,7 @@ class User(AbstractBaseUser):
     tag             = models.CharField(max_length = 20, blank = True, null = True)
     last_name         = models.CharField(max_length = 80, blank = True, null = True)
     country_origin         = models.CharField(max_length = 80, blank = True, null = True)
-    join_reason         = models.JSONField(default={})
+    join_reason         = models.JSONField( blank = True, null = True)
     recoveryCode     = models.CharField(max_length = 10, blank = True, null = True)
     avatar               =   models.ImageField(upload_to = 'profileImage/', default=None, null = True, blank = True)
     email            = models.EmailField(unique=True)
