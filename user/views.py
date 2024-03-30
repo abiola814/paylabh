@@ -322,7 +322,7 @@ class TagView(APIView):
         result={"tag":f"{request.user.tag}@LabTag"}
         if search:
             filters =User.objects.filter(tag__icontains=search)
-            result = filters.values()
+            result = TagSerializerIn(filters,context={"request":request}).data
         
         return successResponse(id,"tag","tag",result) 
     def put(self,request:Request):
