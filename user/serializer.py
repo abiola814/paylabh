@@ -16,13 +16,12 @@ class UserSerializer(serializers.ModelSerializer):
 class TagSerializerIn(serializers.ModelSerializer):
     tag = serializers.SerializerMethodField()
 
-    def get_tag(self,obj):
+    def get_tag(self, obj):
         return f"{obj.tag}@LabTag"
 
-    class Meta(object):
+    class Meta:
         model = User
-        fields = ("tag", 'first_name',"last_name"
-                  )
+        fields = ("tag", 'first_name', "last_name")
 
 class UpdateProfileSerializer(serializers.ModelSerializer):
 
