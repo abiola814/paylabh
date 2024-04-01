@@ -3,7 +3,7 @@ from rest_framework import generics,status
 from rest_framework.response import Response
 from rest_framework.request import Request
 from threading import Thread
-from user.models import User
+from user.models import User,BenefitaryTable
 from user.utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
 import uuid
 # from .providus import create_naira_account
@@ -295,6 +295,10 @@ class BankTransfer(APIView):
             return checkRequest(id,data)
         pin = data.get("pin",None)
         amount= data.get("amount",None)
+        ben = data.get("saved",None)
+        if not ben:
+            data.update({"saveUser":request.user})
+            BenefitaryTable.objects.create(**data)
         trans_id=  (str(uuid.uuid4()))[:12]
         ref_id =  (str(uuid.uuid4()))[:12]
         if not pin == request.user.transaction_pin:

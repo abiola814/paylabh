@@ -125,6 +125,7 @@ class User(AbstractBaseUser):
     number_of_referral = models.IntegerField(default=0)
     point = models.IntegerField(blank=True,null=True,default=0)
     referrer = models.CharField(max_length=10, blank=True, null=True)
+    deviceId = models.CharField(max_length=100, blank=True, null=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
@@ -189,3 +190,10 @@ class bvnVerifyTable(models.Model):
     bvn = models.CharField(("bvn"), max_length=50)
     is_verified = models.CharField(("isVerified"), max_length=50, default=False)
 
+
+
+class BenefitaryTable(models.Model):
+    accountName = models.CharField(("account Name"), max_length=50)
+    accountNumber = models.CharField(("account Number"), max_length=50, default=False)
+    bankCode = models.CharField(("bankCode"), max_length=50,null=True,blank=True)
+    saveUser = models.ForeignKey(User, related_name='saveuser', on_delete=models.CASCADE)

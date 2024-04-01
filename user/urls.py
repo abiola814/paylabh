@@ -21,6 +21,7 @@ urlpatterns = [
     path("changepassword/",Changepassword.as_view()),
     path("country/",CountryView.as_view()),
     path("reason/",JoinreasonView.as_view()),
+    path("Beneficairy/",Beneficairy.as_view()),
     path('referral-link/', ReferralLinkView.as_view(), name='referral_link'),
 
 

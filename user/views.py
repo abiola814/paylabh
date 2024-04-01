@@ -3,7 +3,7 @@ from rest_framework import generics,status
 from rest_framework.response import Response
 from rest_framework.request import Request
 from .custom_auth import CustomAuthBackend
-from .models import User,EmailVerifyTable,PhoneVerifyTable
+from .models import User,EmailVerifyTable,PhoneVerifyTable,BenefitaryTable
 from .utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse,send_welcome_mail
 import uuid
 from .jwt_token import create_jwt_for_user
@@ -70,7 +70,7 @@ class SignupView(generics.GenericAPIView):
 
 
         try:      
-            User.objects.create_user(email=email,phone=phone,password=password,last_name=last,first_name=first,referrer=code)
+            User.objects.create_user(email=email,phone=phone,password=password,last_name=last,first_name=first)
 
         except ValueError as error:
             log_request(f"{error}")
@@ -82,7 +82,7 @@ class SignupView(generics.GenericAPIView):
             referrer_user.number_of_referral += 1
             referrer_user.point +=10
             referrer_user.save()
-            Transaction,object.create(user=referrer_user,name=f"{referrer_user.last_name} {referrer_user.first_name}",transaction_type="point credit",transaction_id= (uuid.uuid4())[:12],reference_id= (uuid.uuid4())[:12],status="Success",description=f"point credit from referral from {user.last_name}",remainbalance=referrer_user.point,amount=10)
+            Transaction.objects.create(user=referrer_user,name=f"{referrer_user.last_name} {referrer_user.first_name}",transaction_type="point credit",transaction_id= (uuid.uuid4())[:12],reference_id= (uuid.uuid4())[:12],status="Success",description=f"point credit from referral from {user.last_name}",remainbalance=referrer_user.point,amount=10)
         user = CustomAuthBackend.authenticate(self,request,credential=email,password=password)
         if user is not None:
             print(user)
@@ -549,3 +549,13 @@ class ReferralLinkView(APIView):
             return successResponse(id,"referral link","referral",referral_link)
 
         return successResponse(id,"referral link","referral",referral_link)
+
+
+
+class Beneficairy(APIView):
+    def get(self, request):
+        id = uuid.uuid4()
+        id = str(id)[:8]
+        log_request(f"referenceId:{id}")
+        allrecord = BenefitaryTable.objects.filter(saveUser=request.user).values()
+        return successResponse(id,"done","beneficiary",allrecord)
