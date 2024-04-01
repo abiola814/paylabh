@@ -170,10 +170,13 @@ class EmailVerifycode(generics.GenericAPIView):
         checking= EmailVerifyTable.objects.filter(code=code)
         if checking.exists():
             verify = EmailVerifyTable.objects.get(code=code)
-            verify.is_verified = True
-            verify.code=None
-            verify.save()
-            return successResponse(id,f"{verify.email} verified")
+            if not verify.is_expired():
+                verify.is_verified = True
+                verify.code=None
+                verify.save()
+                return successResponse(id,f"{verify.email} verified")
+            else:
+                return errorResponse(id,"Code expired")
         else:
             return errorResponse(id,"wrong code")
 

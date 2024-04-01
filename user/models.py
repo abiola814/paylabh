@@ -180,6 +180,12 @@ class EmailVerifyTable(models.Model):
     email = models.CharField(("email"), max_length=50)
     is_verified = models.CharField(("isVerified"), max_length=50, default=False)
     code = models.CharField(("code"), max_length=50,null=True,blank=True)
+    expiration_date = models.DateTimeField(null=True)
+
+    def is_expired(self):
+        if self.expiration_date is None:
+            return False  # If expiration_date is None, the object is not expired
+        return self.expiration_date < timezone.now()
 
 class PhoneVerifyTable(models.Model):
     phone = models.CharField(("phone"), max_length=50)

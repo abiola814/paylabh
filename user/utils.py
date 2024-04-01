@@ -4,6 +4,7 @@ from rest_framework import generics,status
 from rest_framework.response import Response
 from rest_framework.request import Request
 from datetime import datetime
+from django.utils import timezone
 import uuid
 import requests
 from .models import User,EmailVerifyTable,PhoneVerifyTable
@@ -126,10 +127,11 @@ def send_activation_mail(id,mail):
 
         if EmailVerifyTable.objects.filter(email=mail).exists():
             store_otp = EmailVerifyTable.objects.get(email=mail)
+            store_otp.expiration_date=timezone.now() + timezone.timedelta(minutes=2)
             store_otp.code = code
             store_otp.save()
         else:
-            EmailVerifyTable(email=mail,code=code).save()
+            EmailVerifyTable(email=mail,code=code,expiration_date=timezone.now() + timezone.timedelta(minutes=2)).save()
         send=EmailMessage(subject,email_content,'supports@paylab.finance' , [mail])
         send.content_subtype="html"
         send.send()        
