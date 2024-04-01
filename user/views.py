@@ -522,6 +522,7 @@ class Profile(generics.RetrieveUpdateAPIView):
 
 
 class ReferralLinkView(APIView):
+    permission_classes = (IsAuthenticated,)
     def get(self, request):
         id = uuid.uuid4()
         id = str(id)[:8]
@@ -556,6 +557,7 @@ class ReferralLinkView(APIView):
 
 
 class Beneficairy(APIView):
+    permission_classes = (IsAuthenticated,)
     def get(self, request):
         id = uuid.uuid4()
         id = str(id)[:8]
