@@ -99,8 +99,8 @@ def createNairaAccount(user):
 
 @csrf_exempt
 def coralpay_webhook(request):
-    USERNAME=""
-    PASSWORD=""
+    USERNAME="paylab"
+    PASSWORD="#x*3152~.$0"
     if request.method == 'POST':
         # Check if request contains authorization header
         auth_header = request.headers.get('Authorization')
