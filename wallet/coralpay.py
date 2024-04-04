@@ -125,8 +125,8 @@ def coralpay_webhook(request):
         # Check if JSON data is present in the request
         try:
             notification_data = request.json()
-        except ValueError:
-            return JsonResponse({'error': 'Invalid JSON data'}, status=400)
+        except ValueError as e:
+            return JsonResponse({'error': f'Invalid JSON data {e}'}, status=400)
 
         # Extract notification data from JSON payload
         try:
