@@ -152,13 +152,15 @@ def coralpay_webhook(request):
         ).hexdigest()
         if not Wallet.objects.filter(account_number=account_number).exists():
             return JsonResponse({'error': f'account number not found ',"responseCode": "03"}, status=400)
+        if Transaction.objects.filter(reference_id=ref_id).exists():
+            return JsonResponse({'error': f'duplicate transaction ',"responseCode": "03"}, status=400)
         walletUser = Wallet.objects.get(account_number=account_number)
-        walletUser.balance += transaction_amount
-        walletUser.save()
         trans_id=  (str(uuid.uuid4()))[:12]
         Transaction.objects.create(user=walletUser.user,name=f"{walletUser.user.last_name} {walletUser.user.first_name}",
                 transaction_type="Credit",transaction_id= trans_id,reference_id= ref_id,status="Success",is_Transfer=True,SourceAccountNumber=source_number,SourceAccountName=source_name,SourceBankName=source_bank,
                 description=f"transfer from  {source_name}",remainbalance=walletUser.balance,amount=transaction_amount,response=notification_data)
+        walletUser.balance += transaction_amount
+        walletUser.save()
         # Compare computed module value with received module value
         # if computed_module_value != module_value:
         #     return JsonResponse({'error': f'{notification_data}Module value mismatch. Potential data integrity issue'}, status=400)
