@@ -134,7 +134,7 @@ def coralpay_webhook(request):
             account_name = notification_data['account_name']
             transaction_amount = Decimal(notification_data['transaction_amount'])
             module_value = notification_data['module_value']
-        except KeyError:
+        except KeyError as e:
             return JsonResponse({'error': f'Missing required fields in notification data {e}'}, status=400)
 
         # Calculate module value
