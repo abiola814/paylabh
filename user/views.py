@@ -370,6 +370,7 @@ class TransactionPinView(APIView):
         user = User.objects.get(id= request.user.id)
         if int(pin) == user.transaction_pin :
             user.transaction_pin=newpin
+            user.is_Pin=True
             user.save()
             return successResponse(id,"Transaction pin successfully updated")
         else:
