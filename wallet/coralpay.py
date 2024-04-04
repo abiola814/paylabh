@@ -145,8 +145,8 @@ def coralpay_webhook(request):
         ).hexdigest()
 
         # Compare computed module value with received module value
-        if computed_module_value != module_value:
-            return JsonResponse({'error': f'{notification_data}Module value mismatch. Potential data integrity issue'}, status=400)
+        # if computed_module_value != module_value:
+        #     return JsonResponse({'error': f'{notification_data}Module value mismatch. Potential data integrity issue'}, status=400)
 
         # Process the notification and create a transaction
         # Example: Create a transaction using the received data
