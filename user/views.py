@@ -530,7 +530,7 @@ class ReferralLinkView(APIView):
         log_request(f"referenceId:{id}")
         user = request.user
 
-        referral_code = user,referral_code
+        referral_code = user.referral_code
 
         custom_url_scheme = 'myapp://'  # Replace 'myapp://' with your actual app's custom URL scheme
         referral_link = f"{custom_url_scheme}referral/{referral_code}"
