@@ -4,7 +4,10 @@ import string
 import hashlib
 import time
 import base64
+import uuid
+
 from billPayment.bills import walletProcess
+from .models import Wallet,Transaction
 
 import json
 from django.http import JsonResponse
@@ -135,6 +138,10 @@ def coralpay_webhook(request):
             account_number = notification_data['account_number']
             account_name = notification_data['account_name']
             transaction_amount = Decimal(notification_data['transaction_amount'])
+            source_name = notification_data['source_account_name']
+            source_bank = notification_data['source_bank_name']
+            source_number = notification_data['source_account_number']
+            ref_id = notification_data['referenceNumber']
             module_value = notification_data['module_value']
         except KeyError as e:
             return JsonResponse({'error': f'Missing required fields in notification data {e}'}, status=400)
@@ -143,7 +150,15 @@ def coralpay_webhook(request):
         computed_module_value = hashlib.sha512(
             (account_number + account_name + str(transaction_amount)).encode()
         ).hexdigest()
-
+        if Wallet.objects.filter(account_number=account_number).exists():
+            return JsonResponse({'error': f'account number not found '}, status=400)
+        walletUser = Wallet.objects.get(account_number=account_number)
+        walletUser.balance += transaction_amount
+        walletUser.save()
+        trans_id=  (str(uuid.uuid4()))[:12]
+        Transaction.objects.create(user=walletUser.user,name=f"{walletUser.user.last_name} {walletUser.user.first_name}",
+                transaction_type="Credit",transaction_id= trans_id,reference_id= ref_id,status="Success",is_Transfer=True,SourceAccountNumber=source_number,SourceAccountName=source_name,SourceBankName=source_bank,
+                description=f"transfer from  {source_name}",remainbalance=walletUser.balance,amount=transaction_amount,response=notification_data)
         # Compare computed module value with received module value
         # if computed_module_value != module_value:
         #     return JsonResponse({'error': f'{notification_data}Module value mismatch. Potential data integrity issue'}, status=400)
