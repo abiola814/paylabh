@@ -99,8 +99,9 @@ def createNairaAccount(user):
 
 @csrf_exempt
 def coralpay_webhook(request):
-    USERNAME="paylab"
-    PASSWORD="#x*3152~.$0"
+    USERNAME = "paylab"
+    PASSWORD = "#x*3152~.$0"
+    
     if request.method == 'POST':
         # Check if request contains authorization header
         auth_header = request.headers.get('Authorization')
@@ -122,9 +123,10 @@ def coralpay_webhook(request):
         if auth_username != USERNAME or auth_password != PASSWORD:
             return JsonResponse({'error': 'Invalid username or password'}, status=401)
 
-        # Check if JSON data is present in the request
+        # Get JSON data from the request body
         try:
-            notification_data = request.POST
+            body_unicode = request.body.decode('utf-8')
+            notification_data = json.loads(body_unicode)
         except ValueError as e:
             return JsonResponse({'error': f'Invalid JSON data {e}'}, status=400)
 
@@ -135,7 +137,7 @@ def coralpay_webhook(request):
             transaction_amount = Decimal(notification_data['transaction_amount'])
             module_value = notification_data['module_value']
         except KeyError as e:
-            return JsonResponse({'error': f'Missing required fields in notification data {e} {notification_data}'}, status=400)
+            return JsonResponse({'error': f'Missing required fields in notification data {e}'}, status=400)
 
         # Calculate module value
         computed_module_value = hashlib.sha512(
