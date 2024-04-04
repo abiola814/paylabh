@@ -150,7 +150,7 @@ def coralpay_webhook(request):
         computed_module_value = hashlib.sha512(
             (account_number + account_name + str(transaction_amount)).encode()
         ).hexdigest()
-        if Wallet.objects.filter(account_number=account_number).exists():
+        if not Wallet.objects.filter(account_number=account_number).exists():
             return JsonResponse({'error': f'account number not found '}, status=400)
         walletUser = Wallet.objects.get(account_number=account_number)
         walletUser.balance += transaction_amount
