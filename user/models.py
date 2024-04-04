@@ -120,6 +120,7 @@ class User(AbstractBaseUser):
     timestamp        = models.DateTimeField(auto_now_add=True)
     create_at       =   models.DateTimeField(default=timezone.now)
     is_bvn          = models.BooleanField(default=False)
+    is_Pin         = models.BooleanField(default=False)
     referral_code = models.CharField(max_length=10, unique=True, blank=True, null=True)
     referral_link = models.URLField(blank=True, null=True)
     number_of_referral = models.IntegerField(default=0)

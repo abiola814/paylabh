@@ -356,6 +356,7 @@ class TransactionPinView(APIView):
         pin = data.get("pin")
         user = User.objects.get(id= request.user.id)
         user.transaction_pin=pin
+        user.is_Pin=True
         user.save()
         return successResponse(id,"Transaction Pin successfully created")
     def put(self,request:Request):
