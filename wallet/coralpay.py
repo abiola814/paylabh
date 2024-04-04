@@ -135,7 +135,7 @@ def coralpay_webhook(request):
             transaction_amount = Decimal(notification_data['transaction_amount'])
             module_value = notification_data['module_value']
         except KeyError:
-            return JsonResponse({'error': 'Missing required fields in notification data'}, status=400)
+            return JsonResponse({'error': f'Missing required fields in notification data {e}'}, status=400)
 
         # Calculate module value
         computed_module_value = hashlib.sha512(
