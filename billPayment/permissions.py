@@ -1,6 +1,5 @@
 from rest_framework.permissions import BasePermission
 from wallet.models import Wallet
-from django.
 from user.utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
 from rest_framework.response import Response
 
