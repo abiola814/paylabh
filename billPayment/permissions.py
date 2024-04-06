@@ -10,7 +10,7 @@ class IsWallet(BasePermission):
         try:
             walletUser = Wallet.objects.get(user=request.user,currency_code="NGN")
         except Wallet.DoesNotExist:
-            return Response({"error": "Wallet does not exist"}, status=status.HTTP_403_FORBIDDEN)
+            return False
   
         return True
 
