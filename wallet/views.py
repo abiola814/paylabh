@@ -6,6 +6,7 @@ from threading import Thread
 from user.models import User,BenefitaryTable
 from user.utils import log_request,send_password_reset_mail,send_activation_mail,send_activation_phone,validatingPassword,checkRequest,errorResponse,successResponse
 import uuid
+from billPayment.permissions import IsWallet
 # from .providus import create_naira_account
 from .coralpay import createNairaAccount,check_user_bank_details,bank_transfer
 from .models import Transaction,Wallet,Vault,Duration
@@ -61,13 +62,15 @@ class WalletView(APIView):
 
 class VaultView(APIView):
 
-    permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated,IsWallet]
 
     def post(self, request, format=None):
         id = uuid.uuid4()
         id = str(id)[:8]
         data =request.data["data"]
         data["user"]=request.user.id
+        if not data.get('pin') == request.user.transaction_pin:
+            return errorResponse(id,"Transaction pin not correct")
         serializer = VaultSerializer(data=data)
         if serializer.is_valid():
             vault = serializer.save()
@@ -177,7 +180,7 @@ class TransferReview(APIView):
 
 class LabTransferView(APIView):  
 
-    permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated,IsWallet]
     def post(self,request:Request):
         data = request.data.get("data",None)
         id = uuid.uuid4()
@@ -285,7 +288,7 @@ class CheckUserBankDetails(APIView):
 
 
 class BankTransfer(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated,IsWallet]
 
     def post(self, request):
         data = request.data.get("data",None)

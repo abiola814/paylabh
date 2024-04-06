@@ -13,6 +13,7 @@ from django.db.models.query_utils import Q
 from .utils import check_transaction_pin
 from random import randrange
 
+
 # Create your views here.
 class Databundle(APIView):
 
@@ -86,7 +87,7 @@ class Airtime(APIView):
 
 class Electricity(APIView):
 
-    permission_classes=[]
+    permission_classes=[IsAuthenticated]
 
     def post(self,request:Request):
         data = request.data.get("data",None)
