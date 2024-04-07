@@ -342,10 +342,10 @@ def buy_result(request,exam,quantity,amount,ref,id):
 
 def coral_check(slug):
 
-    url =  "http://204.8.207.124:8080/coralpay-vas/api/packages/biller/slug/" + slug
+    url =  "https://vas.coralpay.com/vas-service/api/packages/biller/slug/" + slug
 
     headers = {
-            'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw=='
+             'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA'
     }
 
     try:
@@ -367,10 +367,10 @@ def coral_check(slug):
 
 def all_cable(request=None,id=None):
 
-    url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/2"
+    url =  "https://vas.coralpay.com/vas-service/api/billers/group/2"
 
     headers=headers = {
-            'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw==',
+        'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA'
     }
 
 
@@ -394,11 +394,12 @@ def buy_coralpay(request,customer_number,paymentRef,slug,amount,id):
     if not walletProcess(amount=amount,user=request.user,type=2,id=id):
         return "unable to debit wallet","failed"
 
-    url =  "http://204.8.207.124:8080/coralpay-vas/api/transactions/process-payment" 
+    # url =  "http://204.8.207.124:8080/coralpay-vas/api/transactions/process-payment" 
+    url = 'https://vas.coralpay.com/vas-service/api/transactions/process-payment'
 
     headers= {
-            'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw==',
-            'Content-Type': 'application/json'
+        'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA',
+        'Content-Type': 'application/json'
     }
     data ={
             "paymentReference": paymentRef,
@@ -411,7 +412,6 @@ def buy_coralpay(request,customer_number,paymentRef,slug,amount,id):
             "email": request.user.email,
             "accountNumber": "0012345678"
             }
-    print(data)
     try:
         response=requests.post(url, headers =headers, data=json.dumps(data))
     except:
@@ -453,10 +453,10 @@ def buy_coralpay(request,customer_number,paymentRef,slug,amount,id):
 def confirm_coralpay(customer_number,biller,slug):
 
 
-    url =  "http://204.8.207.124:8080/coralpay-vas/api/transactions/customer-lookup" 
-
+    # url =  "http://204.8.207.124:8080/coralpay-vas/api/transactions/customer-lookup" 
+    url = 'https://vas.coralpay.com/vas-service/api/transactions/customer-lookup'
     headers= {
-            'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw==',
+        'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA',
             'Content-Type': 'application/json'
     }
     data ={
@@ -481,14 +481,13 @@ def confirm_coralpay(customer_number,biller,slug):
 
 def all_electric(request=None,id=None):
 
-    url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/1"
+    # url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/1"
     # url = "https://vas.coralpay.com/vas-service/api/biller-groups/1"
-    
+    url = "https://vas.coralpay.com/vas-service/api/billers/group/1"
 
-    headers=headers = {
-            'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw==',
+    headers = {
+        'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA'
     }
-
     try:
         response=requests.get(url, headers =headers)
     except:
@@ -504,10 +503,13 @@ def all_electric(request=None,id=None):
 
 def all_bet(request=None,id=None):
 
-    url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/7"
-
-    headers=headers = {
-            'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw==',
+    # url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/7"
+    url = "https://vas.coralpay.com/vas-service/api/billers/group/7"
+    # headers = {
+    #         'Authorization': 'Basic UGF5bGFiWDpQQHlsQGJ4NjclIw==',
+    # }
+    headers = {
+        'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA'
     }
 
     try:
