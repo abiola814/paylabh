@@ -4,7 +4,11 @@ import string
 import hashlib
 import time
 import base64
+from threading import Thread
 import uuid
+from .utils import labtransfer,calculate_charge_fee,send_debit_mail,send_credit_mail
+from billPayment.bills import walletProcess
+from datetime import datetime
 
 from billPayment.bills import walletProcess
 from .models import Wallet,Transaction
@@ -275,4 +279,74 @@ def bank_transfer(user,data,charge):
     else:
         return response_data["responseHeader"]["responseMessage"],"reverse"
 
+
+def payout_webhook(request):
+    USERNAME = "paylab"
+    PASSWORD = "#x*3152~.$0"
+    
+    if request.method == 'POST':
+        # Check if request contains authorization header
+        auth_header = request.headers.get('Authorization')
+        if not auth_header:
+            return JsonResponse({'error': 'Authorization header is missing',"responseCode": "01"}, status=401)
+
+        # Extract username and password from authorization header
+        try:
+            auth_type, auth_credentials = auth_header.split(' ')
+            if auth_type.lower() != 'basic':
+                raise ValueError("Unsupported authorization type")
+
+            auth_decoded = base64.b64decode(auth_credentials).decode('utf-8')
+            auth_username, auth_password = auth_decoded.split(':')
+        except (ValueError, UnicodeDecodeError):
+            return JsonResponse({'error': 'Invalid authorization header',"responseCode": "03"}, status=401)
+
+        # Check if username and password match
+        if auth_username != USERNAME or auth_password != PASSWORD:
+            return JsonResponse({'error': 'Invalid username or password',"responseCode": "01"}, status=401)
+
+        # Get JSON data from the request body
+        try:
+            body_unicode = request.body.decode('utf-8')
+            notification_data = json.loads(body_unicode)
+        except ValueError as e:
+            return JsonResponse({'error': f'Invalid JSON data {e}',"responseCode": "01"}, status=400)
+
+        # Extract notification data from JSON payload
+        try:
+
+            ref_id = notification_data['traceId']
+        
+        except KeyError as e:
+            return JsonResponse({'error': f'Missing required fields in notification data {e}',"responseCode": "03"}, status=400)
+
+        # Calculate module value
+        # computed_module_value = hashlib.sha512(
+        #     (account_number + account_name + str(transaction_amount)).encode()
+        # ).hexdigest()
+
+        if Transaction.objects.filter(reference_id=ref_id).exists():
+            if Transaction.objects.filter(reference_id=ref_id,status="Success").exists():
+                return JsonResponse({'error': f'this notification is already processed',"responseCode": "03"}, status=400)
+            trans=Transaction.objects.get(reference_id=ref_id)
+            trans.status="Success"
+            trans.response=notification_data
+            trans.save()
+        
+        
+
+        Thread(target=send_debit_mail, args=[trans.user.email,{"sender":f"{trans.user.first_name} {trans.user.last_name}","time":datetime.now(),"transId":trans.transaction_id,"amount":trans.amount}]).start()
+
+        # Compare computed module value with received module value
+        # if computed_module_value != module_value:
+        #     return JsonResponse({'error': f'{notification_data}Module value mismatch. Potential data integrity issue'}, status=400)
+
+        # Process the notification and create a transaction
+        # Example: Create a transaction using the received data
+        # Replace this with your actual transaction creation logic
+        # transaction = create_transaction(account_number, account_name, transaction_amount)
+
+        return JsonResponse({ "responseMessage": "SUCCESS","responseCode": "00"},status=200)
+
+    return JsonResponse({'error': 'Unsupported method',"responseCode": "01"}, status=405)
 

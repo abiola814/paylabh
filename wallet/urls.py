@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path,include
 from .views import *
-from .coralpay import coralpay_webhook
+from .coralpay import coralpay_webhook,payout_webhook
 urlpatterns = [
 
     path('wallet/', WalletView.as_view()),
@@ -9,6 +9,7 @@ urlpatterns = [
     path('vault/', VaultView.as_view()),
     path('Account/', AccountView.as_view()),
     path('webhook/',coralpay_webhook,name="bankhook"),
+     path('payoutwebhook/',payout_webhook,name="payoutwebhook"),
     path("labtransfer/",LabTransferView.as_view()),
      path("duration/",DurationView.as_view()),
     path('payback/', PaybackView.as_view()),

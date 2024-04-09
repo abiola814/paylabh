@@ -322,11 +322,10 @@ class BankTransfer(APIView):
                 walletProcess(user=request.user,type=3,amount=total_remove_amount,id=id)
                 return errorResponse(id,result)
             else:
-                trans.status="Success"
                 trans.response=result
                 trans.reference_id=result["traceId"]
                 trans.save()
-                Thread(target=send_debit_mail, args=[request.user.email,{"sender":f"{request.user.first_name} {request.user.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount}]).start()
+                # Thread(target=send_debit_mail, args=[request.user.email,{"sender":f"{request.user.first_name} {request.user.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount}]).start()
             return  successResponse(id,"amount transferred","data",{"sender":f"{request.user.first_name} {request.user.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount,"chargeFee":charge["chargeFee"]})
         else:
             return errorResponse(id,'Missing required parameters')
