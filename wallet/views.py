@@ -299,9 +299,7 @@ class BankTransfer(APIView):
         pin = data.get("pin",None)
         amount= data.get("amount",None)
         ben = data.get("saved",None)
-        if not ben:
-            data.update({"saveUser":request.user})
-            BenefitaryTable.objects.create(**data)
+
         trans_id=  (str(uuid.uuid4()))[:12]
         ref_id =  (str(uuid.uuid4()))[:12]
         if not pin == request.user.transaction_pin:
@@ -325,6 +323,8 @@ class BankTransfer(APIView):
                 trans.response=result
                 trans.reference_id=result["traceId"]
                 trans.save()
+            if not ben:
+                BenefitaryTable.objects.create(accountName=data["accountNumber"],accountNumber=data["accountName"],bankCode=data["bankCode"],saveUser=request.user)
                 # Thread(target=send_debit_mail, args=[request.user.email,{"sender":f"{request.user.first_name} {request.user.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount}]).start()
             return  successResponse(id,"amount transferred","data",{"sender":f"{request.user.first_name} {request.user.last_name}","time":datetime.now(),"transId":trans_id,"amount":amount,"chargeFee":charge["chargeFee"]})
         else:
