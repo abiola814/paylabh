@@ -333,9 +333,7 @@ def payout_webhook(request):
             trans.response=notification_data
             trans.save()
         
-        
-
-        Thread(target=send_debit_mail, args=[trans.user.email,{"sender":f"{trans.user.first_name} {trans.user.last_name}","time":datetime.now(),"transId":trans.transaction_id,"amount":trans.amount}]).start()
+            Thread(target=send_debit_mail, args=[trans.user.email,{"sender":f"{trans.user.first_name} {trans.user.last_name}","time":datetime.now(),"transId":trans.transaction_id,"amount":trans.amount}]).start()
 
         # Compare computed module value with received module value
         # if computed_module_value != module_value:
@@ -346,7 +344,8 @@ def payout_webhook(request):
         # Replace this with your actual transaction creation logic
         # transaction = create_transaction(account_number, account_name, transaction_amount)
 
-        return JsonResponse({ "responseMessage": "SUCCESS","responseCode": "00"},status=200)
+            return JsonResponse({ "responseMessage": "SUCCESS","responseCode": "00"},status=200)
+        return JsonResponse({'error': f'Trace Id not exist',"responseCode": "03"}, status=400)
 
     return JsonResponse({'error': 'Unsupported method',"responseCode": "01"}, status=405)
 
