@@ -279,11 +279,11 @@ def bank_transfer(user,data,charge):
     else:
         return response_data["responseHeader"]["responseMessage"],"reverse"
 
-
+@csrf_exempt
 def payout_webhook(request):
     USERNAME = "paylab"
     PASSWORD = "#x*3152~.$0"
-    
+
     if request.method == 'POST':
         # Check if request contains authorization header
         auth_header = request.headers.get('Authorization')
