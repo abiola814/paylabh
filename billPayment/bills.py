@@ -367,7 +367,7 @@ def coral_check(slug):
 
 def all_cable(request=None,id=None):
 
-    url =  "https://vas.coralpay.com/vas-service/api/billers/group/2"
+    url =  "https://vas.coralpay.com/vas-service/api/billers/group/3"
 
     headers=headers = {
         'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA'
@@ -483,7 +483,7 @@ def all_electric(request=None,id=None):
 
     # url =  "http://204.8.207.124:8080/coralpay-vas/api/billers/group/1"
     # url = "https://vas.coralpay.com/vas-service/api/biller-groups/1"
-    url = "https://vas.coralpay.com/vas-service/api/billers/group/1"
+    url = "https://vas.coralpay.com/vas-service/api/billers/group/2"
 
     headers = {
         'Authorization':'Basic aHlicmlkdGVjaDpRXzAlQF8lMndeIzNyJTVAQm9AXm1XOTNA'
