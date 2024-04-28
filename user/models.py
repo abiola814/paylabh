@@ -144,7 +144,7 @@ class User(AbstractBaseUser):
     def get_email(self):
         return self.email
     def get_tag(self):
-        labTag = self.tag + "@LabTag"
+        labTag = self.tag
         return labTag
     def has_perm(self, perm, obj=None):
         return True

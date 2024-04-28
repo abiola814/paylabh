@@ -7,7 +7,7 @@ class UserSerializer(serializers.ModelSerializer):
     tag = serializers.SerializerMethodField()
 
     def get_tag(self,obj):
-        return f"{obj.tag}@LabTag"
+        return f"{obj.tag}"
 
     class Meta(object):
         model = User
@@ -17,7 +17,7 @@ class TagSerializerIn(serializers.ModelSerializer):
     tag = serializers.SerializerMethodField()
 
     def get_tag(self, obj):
-        return f"{obj.tag}@LabTag"
+        return f"{obj.tag}"
 
     class Meta:
         model = User
