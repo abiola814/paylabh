@@ -68,7 +68,7 @@ def buy_airtime(request,network,number,amount,ref,id):
     url =  "https://ruggedwallet.com.ng/api/topup/" 
 
     headers={
-        "Authorization":"Token "+ "YmM4YTk2OTUxZTg4MjU2ODJjMmI2NTMxYjg0ZmUzMmQ1OTlhNmE5ODI3MTFjOTFhZDMxZTVhY2I5YjVh",
+        "Authorization":"Token "+ "2580bc8a96951e8825682c2b6531b84fe32d599a6a982711c91ad31e5acb9b5a",
         "Content-Type":"application/json"
     }
     data ={
@@ -124,7 +124,7 @@ def buy_data(network,dataplan,number,amount,ref,request,id):
     url =  "https://ruggedwallet.com.ng/api/data/" 
 
     headers={
-        "Authorization":"Token "+ "YmM4YTk2OTUxZTg4MjU2ODJjMmI2NTMxYjg0ZmUzMmQ1OTlhNmE5ODI3MTFjOTFhZDMxZTVhY2I5YjVh",
+        "Authorization":"Token "+ "2580bc8a96951e8825682c2b6531b84fe32d599a6a982711c91ad31e5acb9b5a",
      "Content-Type":"application/json"
     }
     data ={
@@ -236,7 +236,7 @@ def buy_bills(request,disco,meter_type,meter_number,amount,ref,id):
     url =  "https://ruggedwallet.com.ng/api/bill/" 
 
     headers={
-        "Authorization":"Token "+ "YmM4YTk2OTUxZTg4MjU2ODJjMmI2NTMxYjg0ZmUzMmQ1OTlhNmE5ODI3MTFjOTFhZDMxZTVhY2I5YjVh",
+        "Authorization":"Token "+ "2580bc8a96951e8825682c2b6531b84fe32d599a6a982711c91ad31e5acb9b5a",
      "Content-Type":"application/json"
     }
     data ={
@@ -293,7 +293,7 @@ def buy_result(request,exam,quantity,amount,ref,id):
     url =  "https://ruggedwallet.com.ng/api/exam/" 
 
     headers={
-        "Authorization":"Token "+ "YmM4YTk2OTUxZTg4MjU2ODJjMmI2NTMxYjg0ZmUzMmQ1OTlhNmE5ODI3MTFjOTFhZDMxZTVhY2I5YjVh",
+        "Authorization":"Token "+ "2580bc8a96951e8825682c2b6531b84fe32d599a6a982711c91ad31e5acb9b5a",
      "Content-Type":"application/json"
     }
     data ={
